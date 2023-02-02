@@ -11,9 +11,63 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <title>Code Climber</title>
   </head>
   <body>
-    <div id="root"></div>
+    <nav class="site-header sticky-top py-1 bg-dark">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2 d-none d-md-inline-block" href="inicio.html">Inicio</a>
+        <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
+        <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
+        <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="hola" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="cart.html">Mi carrito</a>
+            <a class="dropdown-item" href="my-profile.html">Mi perfil</a>
+            <a class="dropdown-item" href="login.html" onclick="desconectar();">Salir</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="m-5">
+          <h1></h1>
+        </div>
+      </section>
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="categories.html" class="card mb-4 shadow-sm custom-card">
+                <img class="bd-placeholder-img card-img-top"  src="img/cat1.jpg">
+                <h3 class="m-3">Autos (122)</h3>
+                <div class="card-body">
+                  <p class="card-text">Los mejores precios en autos 0 kilómetro, de alta y media gama.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+              <a type="button" class="btn btn-light btn-lg btn-block" href="categories.html">Ver todas</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Volver arriba</a>
+        </p>
+        <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+      </div>
+    </footer>
+    <div id="root">
+      <img src="../public/logo.png">
+    </div>
   </body>
 </html>
