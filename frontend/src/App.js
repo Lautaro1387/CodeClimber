@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import { Login } from "./Login";
 import { Register } from "./Register";
+import Navigation from './components/navigation.js';
+import Menu from './components/menu.js';
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
