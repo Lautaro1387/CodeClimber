@@ -1,16 +1,15 @@
 import './index.css';
-const menuButton = document.querySelector("#menu-button");
-const menu = document.querySelector("#menu");
+import Navigation from './components/navigation.js';
+import Menu from './components/menu.js';
 
-menuButton.addEventListener("click", () => {
-  menu.style.display = menu.style.display === "block" ? "none" : "block";
-});
-
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <Navigation />
+      <h1 className='title-main'>Code Climber</h1>
+      <div className='container-main'>
+        <Menu />
+      </div>
     </div>
   );
 }
