@@ -3,7 +3,7 @@ import React from 'react';
 export const Menu = (props) => {
     return (
     <div>
-        <h1 className='title-main'>{props.title}</h1>
+        <h1 className='title-main'>Code Climber</h1>
         <div className='container-main'>
             <a href='quiz.html' className='link-project'>
                 <div className='container-menu'>

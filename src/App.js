@@ -8,10 +8,13 @@ import './styles/styles-comp/menu.css'
 const App = () => {
   return (
     <div>
-      <Navigation />
-      <div className="App">
-        <Menu title="Code Climber" name="Python"/>
-      </div>
+        <Navigation />
+        <div className="App">
+      <Routes>
+          <Route path="/home" element={<Menu name="Python"/>}/>
+          <Route exact path="/login" element={<Log />}/>
+      </Routes>
+        </div>
     </div>
   );
 }
