@@ -1,13 +1,14 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import './styles/App.css';
 import App from './App.js';
+import { BrowserRouter } from "react-router-dom";
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <div>
-    <App />
+      <App />
   </div>
 )

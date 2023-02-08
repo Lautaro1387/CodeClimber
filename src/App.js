@@ -1,28 +1,15 @@
-import React, { useState } from "react";
-import './styles/App.css';
-import { Login } from "./components/login.jsx";
-import { Register } from "./components/Register.jsx";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Menu } from "./components/menu.js";
-import Navigation from './components/navigation.js';
+import React from "react";
+import { Route, Routes} from 'react-router-dom';
+import {Navigation} from './components/navigation.js';
+import {Log} from './components/login-register.jsx'
+import {Menu} from './components/menu.js'
 
 
-function App() {
-  const [currentForm, setCurrentForm] = useState('login');
-
-  const toggleForm = (formName) => {
-    setCurrentForm(formName);
-  }
+const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Navigation>
-          <Route exact path='/login' element={<Login />} />
-          <Route exact path='/home' element={<Navigation />} />
-          <Route exact path='/home' element={<Menu />} />
-        </Navigation>
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <Navigation />
+    </div>
   );
 }
 

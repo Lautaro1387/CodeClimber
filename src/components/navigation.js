@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navigation = () => {
+export const Navigation = () => {
   return (
   <nav className="navbar">
     <div class="circle">
@@ -17,5 +17,3 @@ const Navigation = () => {
     </div>
   </nav>)
 }
-
-export default Navigation;

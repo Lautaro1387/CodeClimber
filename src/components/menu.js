@@ -1,9 +1,11 @@
 import React from 'react';
-import '../styles/App.css'
+import '../styles/styles-comp/menu.css'
 
 export const Menu = (props) => {
     return (
-        <div>
+    <div>
+        <h1 className='title-main'>{props.title}</h1>
+        <div className='container-main'>
             <a href='quiz.html' className='link-project'>
                 <div className='container-menu'>
                     <img
@@ -22,5 +24,6 @@ export const Menu = (props) => {
                 </div>
             </a>
         </div>
+    </div>
     )
 }
