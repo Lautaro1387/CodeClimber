@@ -10,9 +10,9 @@ export const Navigation = () => {
     </div>
     <div>
       <ul className="nav-links">
-        <li><a href="quiz.html">Quiz</a></li>
-        <li><a href="ranking.html">Ranking</a></li>
-        <li><a href="profile.html">Profile</a></li>
+        <li><a href="quiz.html"><i class="fa-sharp fa-solid fa-book"></i></a></li>
+        <li><a href="ranking.html"><i class="fa-solid fa-trophy"></i></a></li>
+        <li><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
       </ul>
     </div>
   </nav>)
