@@ -7,7 +7,6 @@ response = requests.get("https://opentdb.com/api.php?amount=5&category=18&diffic
 data = response.json()
 
 questions = data["questions"]
-
 current_question = 0
 display_question(questions[current_question])
 

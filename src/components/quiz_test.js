@@ -14,7 +14,9 @@ let gameData = {
   
     gameData.questions.push(newQuestion);
   }
-    
+
+
+  
   addQuestion("What does HTML stand for?", [
     ["HyperText Markup Language", true],
     ["Berlín", false],
