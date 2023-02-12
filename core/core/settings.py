@@ -38,7 +38,7 @@ DJANGO_APPS = [
 ]
 
 PROJECT_APPS = [
-    ''
+    'app',
 ]
 
 THIRD_PARTY_APPS = [
@@ -160,3 +160,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = [
 
 ]
+
+AUTH_USER_MODEL = 'app.User'
+
+CKEDITOR_UPLOAD_PATH = 'content/ckeditor/'
