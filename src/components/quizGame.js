@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import '../styles/App.css'
 
-const questions = [  {    question: "¿Cuál es la capital de Franciaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",    options: [      "Madrid",      "París",      "Roma",      "Berlín"    ],
+const questions = [  {    question: "¿Cuál es la capital de Franciaaaaaaaaaaaaaaaaaa",    options: [      "Madrid",      "París",      "Roma",      "Berlín"    ],
     answer: 1
   },
   {
@@ -33,10 +33,10 @@ export const Quiz = () => {
   const handleOptionClick = (index) => {
     if (index === questions[score].answer) {
       setScore(score + 1);
-      setMessages('Respuesta correcta!!!')
+      setMessages('Respuesta correcta')
     } else {
       setScore(score - 1);
-      setMessages('Respuesta incorrecta :(');
+      setMessages('Respuesta incorrecta');
     }
 
     setRemainingQuestions(remainingQuestions - 1);
@@ -62,17 +62,17 @@ export const Quiz = () => {
                   <button onClick={() => handleOptionClick(3)} className="option">
                     {questions[score].options[3]}
                   </button>
+                </div>
               </div>
             </div>
             <div className="remainingQuestions">
               <p>Preguntas restantes: {remainingQuestions}</p>
             </div>
-            <footer className="finally">
-              <p className={messages ? 'correct' : 'incorrect'}>{messages}</p>
-            </footer>
+            <div className="finally">
+              <p className='correct'>{messages}</p>
+            </div>
             </div>
           </div>
         </div>
-      </div>
   );
 }
