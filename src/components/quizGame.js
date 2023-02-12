@@ -1,78 +1,99 @@
 import React, { useState } from "react";
-import '../styles/App.css'
+import '../styles/App.css';
+import questions from './questions.js';
 
-const questions = [  {    question: "¿Cuál es la capital de Franciaaaaaaaaaaaaaaaaaa",    options: [      "Madrid",      "París",      "Roma",      "Berlín"    ],
-    answer: 1
-  },
-  {
-    question: "¿Cuál es la capital de Italia?",
-    options: [
-      "Londres",
-      "París",
-      "Roma",
-      "Berlín"
-    ],
-    answer: 2
-  },
-  {
-    question: "¿Cuál es la capital de España?",
-    options: [
-      "Madrid",
-      "París",
-      "Roma",
-      "Berlín"
-    ],
-    answer: 0
-  }
-];
 
 export const Quiz = () => {
+  const [questionFirst, setQuestionFirst] = useState(0);
   const [score, setScore] = useState(0);
-  const [messages, setMessages] = useState('')
+  const [isFinish, setIsFinish] = useState(false);
   const [remainingQuestions, setRemainingQuestions] = useState(questions.length);
-  const handleOptionClick = (index) => {
-    if (index === questions[score].answer) {
+  
+  function submitOptions(isCorrect, e) {
+    if (isCorrect) {
       setScore(score + 1);
-      setMessages('Respuesta correcta')
-    } else {
-      setScore(score - 1);
-      setMessages('Respuesta incorrecta');
     }
-
+    e.target.classList.add(isCorrect ? "correct" : "incorrect");
     setRemainingQuestions(remainingQuestions - 1);
-  };
+
+    setTimeout(() => {
+      if (questionFirst === questions.length -1) {
+        setIsFinish(true);
+      } else {
+        setQuestionFirst(questionFirst + 1);
+      }
+    }, 1500);
+  }
+
+  if (isFinish)
+    return (
+      <div className="card">
+        <div className="finish-game">
+          <p>Obtuviste {score} puntos de {questions.length} preguntas!</p>
+          <button onClick={() => window.location.href="/quiz"}>
+            Volver a jugar
+          </button>
+          <p></p>
+          <button onClick={() => window.location.href="home"}>
+            Volver al inicio
+          </button>
+        </div>
+      </div>
+    )
 
   return (
-    <div>
       <div className="card">
         <div className="question">
-          <p>{questions[score].question}</p>
-            <div className="quizContainer">
-              <div className="boton">
-                <div className="options">
-                  <button onClick={() => handleOptionClick(0)} className="option">
-                    {questions[score].options[0]}
+          <p>{questions[questionFirst].question}</p>
+          <div className="quizContainer">
+            <div className="boton">
+              <div className="options">
+                {questions[questionFirst].options.map((response) => (
+                  <button className="option-button"
+                  key={response.answer}
+                  onClick={(e) => submitOptions(response.isCorrect, e)}>
+                  {response.answer}
                   </button>
-                  <button onClick={() => handleOptionClick(1)} className="option">
-                    {questions[score].options[1]}
-                  </button>
-                  <button onClick={() => handleOptionClick(2)} className="option">
-                    {questions[score].options[2]}
-                  </button>
-                  <button onClick={() => handleOptionClick(3)} className="option">
-                    {questions[score].options[3]}
-                  </button>
+                ))}
                 </div>
+              <br></br>
+              <div className="remainingQuestions">
+                <p>Remaining questions: {remainingQuestions}</p>
               </div>
-            </div>
-            <div className="remainingQuestions">
-              <p>Preguntas restantes: {remainingQuestions}</p>
-            </div>
-            <div className="finally">
-              <p className='correct'>{messages}</p>
-            </div>
             </div>
           </div>
         </div>
+      </div>
   );
 }
+/*  const [messages, setMessages] = useState('')
+const handleOptionClick = (index) => {
+  if (index === questions[score].answer) {
+    setScore(score + 1);
+    setMessages('Respuesta correcta')
+  } else {
+    setScore(score - 1);
+    setMessages('Respuesta incorrecta');
+  }
+  
+  <button onClick={() => handleOptionClick(0)} className="option">
+  {questions[score].options[0]}
+  </button>
+  <button onClick={() => handleOptionClick(1)} className="option">
+    {questions[score].options[1]}
+  </button>
+  <button onClick={() => handleOptionClick(2)} className="option">
+  {questions[score].options[2]}
+  </button>
+  <button onClick={() => handleOptionClick(3)} className="option">
+  {questions[score].options[3]}
+  </button>
+};
+
+return (
+  <div>
+  <div className="finally">
+    <p className='correct'>{messages}</p>
+  </div>
+  );
+  */

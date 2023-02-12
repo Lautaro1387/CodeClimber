@@ -179,6 +179,15 @@ button {
   font-weight: bold;
 }
 
+.option-button {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  box-shadow: 0 3px 13px 1px black;
+}
 #remaining {
   margin-top: 10px;
 }
@@ -189,12 +198,13 @@ button {
   z-index: 1;
 }
 .question {
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 10px;
   align-items: center;
   justify-content: center;
   text-align: "center";
-  width: 300px;
+  width: 500px;
+  height: -200px;
   z-index: 1;
 }
 .options {
@@ -203,6 +213,7 @@ button {
   align-items: center;
   justify-content: center;
   text-align: "center";
+  box-sizing: border-box;
 }
 .option {
   font-size: 18px;
@@ -217,6 +228,11 @@ button {
   border: "none";
   border-radius: 50;
   cursor: "pointer";
+  box-sizing: border-box;
+}
+.option-button {
+  width: 220px;
+  height: 70px;
 }
 .remainingQuestions {
   margin-top: 10px;
@@ -286,24 +302,18 @@ button {
 .correct {
   background-color: rgb(64, 223, 64);
   color: black;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
 }
 
 .incorrect {
   background-color: rgb(192, 34, 34);
-  color: white;
-  height: 50px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-top: 100px;
-  border-right: 100px;
+  color: black;
+}
+
+.finish-game {
+  z-index: 1;
+}
+
+.button-finish {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
