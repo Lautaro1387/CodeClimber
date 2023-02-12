@@ -1,93 +1,78 @@
 import React, { useState } from "react";
+import '../styles/App.css'
 
-let questions = {
-  "questions": []
-};
-
-function addQuestion(question, options) {
-const newQuestion = {
-  "question": question,
-  "options": []
-};
-
-for (const option of options) {
-  newQuestion.options.push({ "option": option[0], "correct": option[1] });
-}
-
-questions.questions.push(newQuestion);
-}
-
-addQuestion("What does HTML stand for?",
-[
-  ["HyperText Markup Language", true],
-  ["Berlín", false],
-  ["Roma", false],
-  ["Londres", false]
-]);
+const questions = [  {    question: "¿Cuál es la capital de Franciaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",    options: [      "Madrid",      "París",      "Roma",      "Berlín"    ],
+    answer: 1
+  },
+  {
+    question: "¿Cuál es la capital de Italia?",
+    options: [
+      "Londres",
+      "París",
+      "Roma",
+      "Berlín"
+    ],
+    answer: 2
+  },
+  {
+    question: "¿Cuál es la capital de España?",
+    options: [
+      "Madrid",
+      "París",
+      "Roma",
+      "Berlín"
+    ],
+    answer: 0
+  }
+];
 
 export const Quiz = () => {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [score, setScore] = useState(0);
+  const [messages, setMessages] = useState('')
   const [remainingQuestions, setRemainingQuestions] = useState(questions.length);
   const handleOptionClick = (index) => {
-    if (index === questions[currentQuestion].answer) {
-        alert("Correct");
-        return;
+    if (index === questions[score].answer) {
+      setScore(score + 1);
+      setMessages('Respuesta correcta!!!')
     } else {
-      alert("Incorrect");
+      setScore(score - 1);
+      setMessages('Respuesta incorrecta :(');
     }
 
-    setCurrentQuestion(currentQuestion + 1);
     setRemainingQuestions(remainingQuestions - 1);
   };
 
   return (
-    <div style={styles.quizContainer}>
-      <div style={styles.question}>
-        <p>{questions[currentQuestion].question}</p>
+    <div>
+      <div className="card">
+        <div className="question">
+          <p>{questions[score].question}</p>
+            <div className="quizContainer">
+              <div className="boton">
+                <div className="options">
+                  <button onClick={() => handleOptionClick(0)} className="option">
+                    {questions[score].options[0]}
+                  </button>
+                  <button onClick={() => handleOptionClick(1)} className="option">
+                    {questions[score].options[1]}
+                  </button>
+                  <button onClick={() => handleOptionClick(2)} className="option">
+                    {questions[score].options[2]}
+                  </button>
+                  <button onClick={() => handleOptionClick(3)} className="option">
+                    {questions[score].options[3]}
+                  </button>
+              </div>
+            </div>
+            <div className="remainingQuestions">
+              <p>Preguntas restantes: {remainingQuestions}</p>
+            </div>
+            <footer className="finally">
+              <p className={messages ? 'correct' : 'incorrect'}>{messages}</p>
+            </footer>
+            </div>
+          </div>
+        </div>
       </div>
-      <div style={styles.options}>
-        <button onClick={() => handleOptionClick(0)} style={styles.option}>
-          {questions[currentQuestion].options[0]}
-        </button>
-        <button onClick={() => handleOptionClick(1)} style={styles.option}>
-          {questions[currentQuestion].options[1]}
-        </button>
-        <br />
-        <button onClick={() => handleOptionClick(2)} style={styles.option}>
-          {questions[currentQuestion].options[2]}
-        </button>
-        <button onClick={() => handleOptionClick(3)} style={styles.option}>
-          {questions[currentQuestion].options[3]}
-        </button>
-      </div>
-      <div style={styles.remainingQuestions}>
-        <p>Preguntas restantes: {remainingQuestions}</p>
-      </div>
-    </div>
   );
-}
-
-const styles = {
-  quizContainer: {
-    textAlign: "center"
-  },
-  question: {
-    fontSize: 20,
-    marginTop: 50
-  },
-  options: {
-    marginTop: 20
-  },
-  option: {
-    fontSize: 16,
-    marginTop: 20,
-    padding: 10,
-    backgroundColor: "lightblue",
-    border: "none",
-    borderRadius: 5,
-    cursor: "pointer"
-  },
-  remainingQuestions: {
-    marginTop: 20
-  }
 }
