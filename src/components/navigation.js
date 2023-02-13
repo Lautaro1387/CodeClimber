@@ -5,7 +5,7 @@ export const Navigation = () => {
   <nav className="navbar">
     <div class="circle">
       <a href="home"> 
-        <img src={require('../images/logo.png')} alt="Logo" className="logo"/>
+        <img src={require('../images/CodeClimber.jpg')} alt="Logo" className="logo"/>
       </a>
     </div>
     <div>
