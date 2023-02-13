@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/App.css';
-import questions from './questions.js';
+import questions from '../js/questions.js';
 import {Confetti} from './confetti.js';
 
 
