@@ -6,6 +6,7 @@ import { Quiz } from './components/quizGame.js';
 import { Rank } from './components/ranking.js';
 import {data} from './js/dataRank.js';
 import './styles/App.css'
+import Aboutus from "./components/about.js";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route exact path="/" element={<Log />} />
         <Route path="/home" element={<Menu name="Python" />} />
         <Route path="/quiz" element={<Quiz />} />
+        <Route path="/about" element={<Aboutus />} />
         <Route path="/ranking" element={<Rank data={data} />} />
       </Routes>
     </div>
