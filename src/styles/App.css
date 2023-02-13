@@ -317,3 +317,25 @@ button {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
+.table-ranking {
+  width: 50%;
+  height: 80%;
+  border-collapse: collapse;
+  box-shadow: 0 3px 13px 5px black;
+}
+
+th {
+  text-align: center;
+  border: 1px solid #01c38e;
+  padding: 8px;
+  background-color: #07182E;
+}
+td {
+  border: 1px solid #01c38e;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #1a1e29;
+}
