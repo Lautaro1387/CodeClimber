@@ -57,11 +57,11 @@ const Aboutus = () => {
         <div class="card-about">
             <div class="content-about">
                 <div class="imgBx">
-                <img src={require('../images/lau.jpg')} alt="Logo" className="logo-about"/>
+                <img src={require('../images/felosandim.jpg')} alt="Logo" className="logo-about"/>
                 </div>
                 <div class="contentBx">
-                    <h4>Lautaro Illa</h4>
-                    <h5>Lautaro Illa</h5>
+                    <h4>Felipe Sandim</h4>
+                    <h5>Valorant Player 💀</h5>
                 </div>
                 <div class="sci">
                 <a href="https://github.com/Lautaro1387" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
