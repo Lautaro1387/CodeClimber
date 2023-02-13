@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import '../styles/App.css';
 import questions from './questions.js';
+import {Confetti} from './confetti.js';
 
 
 export const Quiz = () => {
@@ -25,18 +26,22 @@ export const Quiz = () => {
     }, 1500);
   }
 
+
   if (isFinish)
     return (
-      <div className="card">
-        <div className="finish-game">
-          <p>Obtuviste {score} puntos de {questions.length} preguntas!</p>
-          <button onClick={() => window.location.href="/quiz"}>
-            Volver a jugar
-          </button>
-          <p></p>
-          <button onClick={() => window.location.href="home"}>
-            Volver al inicio
-          </button>
+      <div>
+        <Confetti />
+        <div className="card">
+          <div className="finish-game">
+            <p>Obtuviste {score} puntos de {questions.length} preguntas!</p>
+            <button onClick={() => window.location.href="/quiz"}>
+              Volver a jugar
+            </button>
+            <p></p>
+            <button onClick={() => window.location.href="home"}>
+              Volver al inicio
+            </button>
+          </div>
         </div>
       </div>
     )
