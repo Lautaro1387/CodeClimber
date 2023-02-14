@@ -181,15 +181,6 @@ const questions = [
         { Answer: "strlen()", isCorrect: false },
     ],
 },
-{
-    question: "Which function returns the length of an object?",
-    options: [
-        { Answer: "length()", isCorrect: false },
-        { Answer: "len()", isCorrect: true },
-        { Answer: "show_len()", isCorrect: false },
-        { Answer: "strlen()", isCorrect: false },
-    ],
-},
 /*esto es CSS*/
 {
     question: "How can you select a css class?",
