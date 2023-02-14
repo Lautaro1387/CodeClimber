@@ -8,7 +8,7 @@ const Aboutus = () => {
         <div class="card-about">
             <div class="content-about">
                 <div class="imgBx">
-                <img src={require('../images/lau.jpg')} alt="Logo" className="logo-about"/>
+                <img src={require('../images/Lautaro.jpg')} alt="Logo" className="logo-about"/>
                 </div>
                 <div class="contentBx">
                     <h4>Lautaro Illa</h4>
@@ -25,11 +25,11 @@ const Aboutus = () => {
         <div class="card-about">
             <div class="content-about">
                 <div class="imgBx">
-                <img src={require('../images/lau.jpg')} alt="Logo" className="logo-about"/>
+                <img src={require('../images/santoreco.jpg')} alt="Logo" className="logo-about"/>
                 </div>
                 <div class="contentBx">
-                    <h4>Lautaro Illa</h4>
-                    <h5>Project Manager</h5>
+                    <h4>Santiago Alves </h4>
+                    <h5>Front End Developer</h5>
                 </div>
                 <div class="sci">
                 <a href="https://github.com/Lautaro1387" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -41,11 +41,11 @@ const Aboutus = () => {
         <div class="card-about">
             <div class="content-about">
                 <div class="imgBx">
-                <img src={require('../images/lau.jpg')} alt="Logo" className="logo-about"/>
+                <img src={require('../images/Marcelo.jpg')} alt="Logo" className="logo-about"/>
                 </div>
                 <div class="contentBx">
-                    <h4>Lautaro Illa</h4>
-                    <h5>Project Manager</h5>
+                    <h4>Marcelo Rodriguez</h4>
+                    <h5>Front End Developer</h5>
                 </div>
                 <div class="sci">
                 <a href="https://github.com/Lautaro1387" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -57,11 +57,11 @@ const Aboutus = () => {
         <div class="card-about">
             <div class="content-about">
                 <div class="imgBx">
-                <img src={require('../images/felosandim.jpg')} alt="Logo" className="logo-about"/>
+                <img src={require('../images/Felipe.jpg')} alt="Logo" className="logo-about"/>
                 </div>
                 <div class="contentBx">
                     <h4>Felipe Sandim</h4>
-                    <h5>Valorant Player 💀</h5>
+                    <h5>Back End Developer</h5>
                 </div>
                 <div class="sci">
                 <a href="https://github.com/Lautaro1387" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -73,11 +73,11 @@ const Aboutus = () => {
         <div class="card-about">
             <div class="content-about">
                 <div class="imgBx">
-                <img src={require('../images/lau.jpg')} alt="Logo" className="logo-about"/>
+                <img src={require('../images/Vico.jpg')} alt="Logo" className="logo-about"/>
                 </div>
                 <div class="contentBx">
-                    <h4>Lautaro Illa</h4>
-                    <h5>Project Manager</h5>
+                    <h4>Victoria Marquez</h4>
+                    <h5>Back End Developer</h5>
                 </div>
                 <div class="sci">
                 <a href="https://github.com/Lautaro1387" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -88,7 +88,6 @@ const Aboutus = () => {
         </div>
     </div>
     <div className='reference-about'>
-        <h1>Code climber es una aplicacion web que te permitira poner aprueba tus conocimientos sobre programacion, aqui encontraras una cantidad enorme de preguntas sobre todo tipo de lenguajes de programacion.</h1>
     </div>
     </div>
   )

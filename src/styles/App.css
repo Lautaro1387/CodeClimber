@@ -400,6 +400,7 @@ button {
     position: relative;
     margin-bottom: 20px;
     overflow: hidden;
+    box-shadow: 0 3px 13px 5px black;
   }
   .container-about .card-about .content-about .imgBx .logo-about
   {
@@ -455,6 +456,7 @@ button {
   margin: 20px;
   background: #f2f3f7;
   border-radius: 20px;
+  box-shadow: 1 3px 13px 500000px green;
 }
 
 .container-about .card-about .content-about {
@@ -530,6 +532,7 @@ button {
   border-radius: 20px;
   display: grid;
   grid-template-columns: repeat(5fr 1fr);
+  box-shadow: 0 3px 13px 10px black;
 }
 
 .container-about .card-about .content-about {
