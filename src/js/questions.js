@@ -1,9 +1,10 @@
 const questions = [
+    /*esto es HTML*/
     {
     question: "What does HTML stand for?",
     options: [
-        { answer: "HyperText Making Language", isCorrect: false },
-        { answer: "HyperTextual Making Lists", isCorrect: true },
+        { answer: "HyperText Markup Language", isCorrect: true },
+        { answer: "HyperTextual Making Lists", isCorrect: false },
         { answer: "HyperText Markup Links", isCorrect: false },
         { answer: "HyperText Marks Language", isCorrect: false },
     ],
@@ -12,7 +13,7 @@ const questions = [
     question: "How can you start an HTML file?",
     options: [
         { answer: "<html>", isCorrect: false },
-        { answer: "<!DOCTYPE>", isCorrect: true },
+        { answer: "<!DOCTYPE html>", isCorrect: true },
         { answer: "<head>", isCorrect: false },
         { answer: "<body>", isCorrect: false },
     ],
@@ -87,6 +88,197 @@ const questions = [
         { answer: "<br>", isCorrect: false },
         { answer: "<hr>", isCorrect: true },
         { answer: "<theme>", isCorrect: false },
+    ],
+},
+/*esto es Python*/
+{
+    question: "Which function prints the string 'Hello World'?",
+    options: [
+        { Answer: "show()", isCorrect: false },
+        { Answer: "printf()", isCorrect: false },
+        { Answer: "print()", isCorrect: true },
+        { Answer: "console.log()", isCorrect: false },
+    ],
+},
+{
+    question: "Which function adds two numbers?",
+    options: [
+        { Answer: "add()", isCorrect: false },
+        { Answer: "sum()", isCorrect: true },
+        { Answer: "adds()", isCorrect: false },
+        { Answer: "count()", isCorrect: false },
+    ],
+},
+{
+    question: "Which function allows user input?",
+    options: [
+        { Answer: "add()", isCorrect: false },
+        { Answer: "type()", isCorrect: false },
+        { Answer: "put()", isCorrect: false },
+        { Answer: "input()", isCorrect: true },
+    ],
+},
+{
+    question: "Which function shows the parameters type of data?",
+    options: [
+        { Answer: "data()", isCorrect: false },
+        { Answer: "type()", isCorrect: true },
+        { Answer: "typeof()", isCorrect: false },
+        { Answer: "types()", isCorrect: false },
+    ],
+},
+{
+    question: "Which function Returns the boolean value of the specified object?",
+    options: [
+        { Answer: "boo()", isCorrect: false },
+        { Answer: "boolean()", isCorrect: false },
+        { Answer: "bool()", isCorrect: true },
+        { Answer: "bln()", isCorrect: false },
+    ],
+},
+{
+    question: "Which function returns a dictionary?",
+    options: [
+        { Answer: "dict()", isCorrect: true },
+        { Answer: "dictionary()", isCorrect: false },
+        { Answer: "todic()", isCorrect: false },
+        { Answer: "dic()", isCorrect: false },
+    ],
+},
+{
+    question: "Which function formats a specified value?",
+    options: [
+        { Answer: "form()", isCorrect: false },
+        { Answer: "type()", isCorrect: false },
+        { Answer: "format()", isCorrect: true },
+        { Answer: "formatof()", isCorrect: false },
+    ],
+},
+{
+    question: "Which function returns the id of an object?",
+    options: [
+        { Answer: "id_()", isCorrect: false },
+        { Answer: "ids()", isCorrect: false },
+        { Answer: "toid()", isCorrect: false },
+        { Answer: "id()", isCorrect: true },
+    ],
+},
+{
+    question: "Which function returns an integer number?",
+    options: [
+        { Answer: "int()", isCorrect: true },
+        { Answer: "intr()", isCorrect: false },
+        { Answer: "get_int()", isCorrect: false },
+        { Answer: "integer()", isCorrect: false },
+    ],
+},
+{
+    question: "Which function returns the length of an object?",
+    options: [
+        { Answer: "length()", isCorrect: false },
+        { Answer: "len()", isCorrect: true },
+        { Answer: "show_len()", isCorrect: false },
+        { Answer: "strlen()", isCorrect: false },
+    ],
+},
+{
+    question: "Which function returns the length of an object?",
+    options: [
+        { Answer: "length()", isCorrect: false },
+        { Answer: "len()", isCorrect: true },
+        { Answer: "show_len()", isCorrect: false },
+        { Answer: "strlen()", isCorrect: false },
+    ],
+},
+/*esto es CSS*/
+{
+    question: "How can you select a css class?",
+    options: [
+        { Answer: ".class", isCorrect: true },
+        { Answer: "/class", isCorrect: false },
+        { Answer: "class:", isCorrect: false },
+        { Answer: "class.", isCorrect: false },
+    ],
+},
+{
+    question: "Which element defines the text font size?",
+    options: [
+        { Answer: "width:", isCorrect: false },
+        { Answer: "font-size:", isCorrect: true },
+        { Answer: "length:", isCorrect: false },
+        { Answer: "size:", isCorrect: false },
+    ],
+},
+{
+    question: "Which element defines the text font type?",
+    options: [
+        { Answer: "type:", isCorrect: false },
+        { Answer: "font-type:", isCorrect: false },
+        { Answer: "font:", isCorrect: false },
+        { Answer: "font-family:", isCorrect: true },
+    ],
+},
+{
+    question: "Which element defines an element text color?",
+    options: [
+        { Answer: ".color", isCorrect: false },
+        { Answer: "text:", isCorrect: false },
+        { Answer: "color:", isCorrect: true },
+        { Answer: "text-color:", isCorrect: false },
+    ],
+},
+{
+    question: "Which element specifies how an element is displayed on screen?",
+    options: [
+        { Answer: "display:", isCorrect: true },
+        { Answer: "show:", isCorrect: false },
+        { Answer: ".display", isCorrect: false },
+        { Answer: "display-element:", isCorrect: false },
+    ],
+},
+{
+    question: "Which element sets the extra spacing between letters?",
+    options: [
+        { Answer: "space:", isCorrect: false },
+        { Answer: "letter-spacing:", isCorrect: true },
+        { Answer: "letter-break", isCorrect: false },
+        { Answer: "spacing:", isCorrect: false },
+    ],
+},
+{
+    question: "Which element sets the padding on all four sides of the element?",
+    options: [
+        { Answer: "padding-all:", isCorrect: false },
+        { Answer: "padding:", isCorrect: true },
+        { Answer: "padding-top:", isCorrect: false },
+        { Answer: "padding-bottom:", isCorrect: false },
+    ],
+},
+{
+    question: "Which element sets the horizontal alignment of inline content?",
+    options: [
+        { Answer: "text-alignment:", isCorrect: false },
+        { Answer: "align:", isCorrect: false },
+        { Answer: "text-align:", isCorrect: true },
+        { Answer: "alignment:", isCorrect: false },
+    ],
+},
+{
+    question: "Which element defines the transition between two states of an element?",
+    options: [
+        { Answer: "transition-delay:", isCorrect: false },
+        { Answer: "transition:", isCorrect: true },
+        { Answer: "transition-property:", isCorrect: false },
+        { Answer: "transition-both:", isCorrect: false },
+    ],
+},
+{
+    question: "Which element specifies the width of an element?",
+    options: [
+        { Answer: "width:", isCorrect: true },
+        { Answer: "height:", isCorrect: false },
+        { Answer: "width-size:", isCorrect: false },
+        { Answer: "size:", isCorrect: false },
     ],
 },
 ]
