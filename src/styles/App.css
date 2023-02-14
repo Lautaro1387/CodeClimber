@@ -129,7 +129,7 @@ code {
 }
 
 nav a {
-  color: #BFF9E9; 
+  color: #BFF9E9;
   text-align: left;
   text-decoration: none;
 }
@@ -181,11 +181,9 @@ a:hover {
   letter-spacing: -0.015em;
 
 
-  background-image: linear-gradient(
-    180deg,
-    #BFF9E9,
-    #01c38e
-  );
+  background-image: linear-gradient(180deg,
+      #BFF9E9,
+      #01c38e);
 
   background-clip: text;
   -webkit-background-clip: text;
@@ -369,12 +367,11 @@ button {
 
 
 
-.container-about
-{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
+.container-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .container-about .card-about
 {
@@ -400,7 +397,6 @@ button {
     position: relative;
     margin-bottom: 20px;
     overflow: hidden;
-    box-shadow: 0 3px 13px 5px black;
   }
   .container-about .card-about .content-about .imgBx .logo-about
   {
@@ -426,22 +422,23 @@ button {
    font-weight: bold;
    text-align: center;
 }
-.container-about .card-about .content-about .sci
-{
-   margin-top: 20px;
+
+.container-about .card-about .content-about .sci {
+  margin-top: 20px;
 }
-.container-about .card-about .content-about .sci a
-{
+
+.container-about .card-about .content-about .sci a {
   text-decoration: none;
   color: #6c758f;
   font-size: 30px;
   margin: 10px;
   transition: color 0.4s;
 }
-.container-about .card-about .content-about .sci a:hover
-{
+
+.container-about .card-about .content-about .sci a:hover {
   color: #0196e3;
 }
+
 .container-about {
   display: flex;
   justify-content: center;
@@ -592,7 +589,7 @@ button {
 }
 
 .h1-about {
-  
+
   margin-top: 1px;
   margin-top: 50px;
   margin-bottom: 70px;
@@ -606,6 +603,7 @@ button {
   margin-top: 60px;
 }
 
+
 .table-ranking {
   width: 700px;
   height: 100%;
@@ -613,22 +611,24 @@ button {
   box-shadow: 0 3px 13px 5px black;
   border-radius: 20px;
 }
+
 th {
   text-align: center;
-  border: 1px solid #01c38e;
   padding: 8px;
   background: linear-gradient(to bottom, #1a1e29, #282c34);
 }
 
 td {
-  border: 1px solid #01c38e;
+  border: 1px solid black;
   padding: 8px;
   text-align: left;
+  border-radius: 20px;
 }
 
 th {
   background-color: #1a1e29;
 }
+
 .img-rank {
   text-align: center;
 }

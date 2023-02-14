@@ -1,7 +1,7 @@
 let gameData = {
-    "questions": []
-  };
-  
+  "questions": []
+};
+
 function addQuestion(question, options) {
   const newQuestion = {
     "question": question,
@@ -38,10 +38,10 @@ fetch("localhost:3000/quiz", {
   },
   body: JSON.stringify(gameData)
 })
-.then(response => response.json())
-.then(data => {
-  console.log("El archivo JSON se ha guardado en el servidor:", data);
-})
-.catch(error => {
-  console.error("Error al guardar el archivo JSON en el servidor:", error);
-});
+  .then(response => response.json())
+  .then(data => {
+    console.log("El archivo JSON se ha guardado en el servidor:", data);
+  })
+  .catch(error => {
+    console.error("Error al guardar el archivo JSON en el servidor:", error);
+  });
