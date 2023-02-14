@@ -8,7 +8,8 @@ export const data = [
 
 export const Rank = (props) => {
   return (
-    <div className="container-table">
+    <div className="img-rank">
+      <img src="https://img2.freepng.es/20190707/iqc/kisspng-portable-network-graphics-vector-graphics-clip-art-online-mock-test-series-sample-question-papers-5d2251eea0ba39.8351639215625302866584.jpg" />
       <table className='table-ranking'>
         <thead>
           <tr>

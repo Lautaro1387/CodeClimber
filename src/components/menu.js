@@ -43,7 +43,7 @@ export const Menu = () => {
                 </a>
             </div>
             <div className='container-main'>
-                <a href='quiz.html' className='link-project'>
+                <a href='/quiz' className='link-project'>
                     <div className='container-menu'>
                         <img
                             className='img-medals'
