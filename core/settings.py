@@ -38,7 +38,7 @@ DJANGO_APPS = [
 ]
 
 PROJECT_APPS = [
-    'app',
+    'api',
 ]
 
 THIRD_PARTY_APPS = [
@@ -51,7 +51,7 @@ THIRD_PARTY_APPS = [
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
-    'corsgeaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -80,7 +80,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'core.wsgi.application'
+# WSGI_APPLICATION = 'core.wsgi.application'
 
 
 # Database
@@ -157,10 +157,5 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-REST_FRAMEWORK = [
-
-]
-
-AUTH_USER_MODEL = 'app.User'
 
 CKEDITOR_UPLOAD_PATH = 'content/ckeditor/'
