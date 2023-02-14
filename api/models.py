@@ -21,7 +21,7 @@ class User(models.Model):
         return self.points
 
     def __str__(self):
-        return str(self.username + '/ id:' + self.id)
+        return str(self.username + '/ id:' + str(self.id))
 
 class Quiz(models.Model):
 
