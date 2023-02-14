@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.1531c0f0.css",
-    "main.js": "/static/js/main.30aa2d7d.js",
+    "main.css": "/static/css/main.6d610134.css",
+    "main.js": "/static/js/main.d22361e3.js",
+    "static/media/lau.jpg": "/static/media/lau.e0a52322950df58808a7.jpg",
+    "static/media/felosandim.jpg": "/static/media/felosandim.5c93a72690d474e9115d.jpg",
     "index.html": "/index.html",
-    "main.1531c0f0.css.map": "/static/css/main.1531c0f0.css.map",
-    "main.30aa2d7d.js.map": "/static/js/main.30aa2d7d.js.map"
+    "main.6d610134.css.map": "/static/css/main.6d610134.css.map",
+    "main.d22361e3.js.map": "/static/js/main.d22361e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.1531c0f0.css",
-    "static/js/main.30aa2d7d.js"
+    "static/css/main.6d610134.css",
+    "static/js/main.d22361e3.js"
   ]
 }

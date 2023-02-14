@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Menu = (props) => {
+export const Menu = () => {
     return (
         <div>
             <h1 className='title-main'>Code Climber</h1>
@@ -12,7 +12,7 @@ export const Menu = (props) => {
                             src='https://imgs.search.brave.com/LsLHD6ZjCe-nruurMz3p8BUwFC88DaWnJMB3bHX_pSU/rs:fit:512:512:1/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvNjEwLzYxMDMz/My5wbmc'
                             alt='medals' />
                         <div>
-                            <p className='name-project'>{props.name}</p>
+                            <p className='name-project'>Python</p>
                         </div>
                         <div className='circle-score'>
                             <img
@@ -31,7 +31,7 @@ export const Menu = (props) => {
                             src='https://imgs.search.brave.com/LsLHD6ZjCe-nruurMz3p8BUwFC88DaWnJMB3bHX_pSU/rs:fit:512:512:1/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvNjEwLzYxMDMz/My5wbmc'
                             alt='medals' />
                         <div>
-                            <p className='name-project'>{props.name}</p>
+                            <p className='name-project'>Python</p>
                         </div>
                         <div className='circle-score'>
                             <img
@@ -50,7 +50,7 @@ export const Menu = (props) => {
                             src='https://imgs.search.brave.com/LsLHD6ZjCe-nruurMz3p8BUwFC88DaWnJMB3bHX_pSU/rs:fit:512:512:1/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvNjEwLzYxMDMz/My5wbmc'
                             alt='medals' />
                         <div>
-                            <p className='name-project'>{props.name}</p>
+                            <p className='name-project'>Python</p>
                         </div>
                         <div className='circle-score'>
                             <img
