@@ -23,24 +23,21 @@ class User(models.Model):
     def __str__(self):
         return str(self.username + '/ id:' + str(self.id))
 
-class Quiz(models.Model):
-
+class Question(models.Model):
     CATEGORY = (
-        ('html', 'HTML'),
-        ('css', 'CSS'),
-        ('javascript', 'JavaScript'),
+        ('HTML', 'HTML'),
+        ('CSS', 'CSS'),
+        ('Python', 'Python'),
+        ('JavaScript', 'JavaScript'),
     )
-
-    quiz_id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True,
-                               editable=False)
+    id = models.AutoField(primary_key=True, blank=False, null=False, unique=True)
+    question = models.CharField(max_length=300, blank=False, null= False)
     category = models.CharField(max_length=100, null=False, choices=CATEGORY)
-    description = models.TextField(null=True)
-    question = models.CharField(max_length=100, null=False, unique=True)
-    answer = models.CharField(max_length=50, null=False)
-    points = models.IntegerField(default=0, null=False)
-    user_id = models.ForeignKey(User, 
-                                on_delete=models.CASCADE, null=False, blank=False)
-    is_complete = models.BooleanField(default=False, null=True, blank=True)
-            
+    
     def __str__(self):
-        return str(self.category + ' / question:' + self.question)
+        return self.category
+    
+class Options(models.Model):
+    question = models.ForeignKey(Question, related_name="options", on_delete=models.CASCADE)
+    answer = models.CharField(max_length=300)
+    is_correct = models.BooleanField(default=False)
