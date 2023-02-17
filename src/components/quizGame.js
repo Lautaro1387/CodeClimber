@@ -10,6 +10,14 @@ export const Quiz = () => {
   const [isFinish, setIsFinish] = useState(false);
   const [remainingQuestions, setRemainingQuestions] = useState(questions.length);
   
+  datesTaks = () => {
+    console.log('fetch...')
+    fetch('127.0.0.1:8000/api/quiz')
+    .then(res => res.json())
+    .then(data => 
+      console.log('Data:', data)
+      )
+  }
   function submitOptions(isCorrect, e) {
     if (isCorrect) {
       setScore(score + 1);
@@ -25,7 +33,6 @@ export const Quiz = () => {
       }
     }, 1500);
   }
-
 
   if (isFinish)
     return (
