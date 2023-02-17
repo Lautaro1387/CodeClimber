@@ -31,10 +31,10 @@ addQuestion("How can you start an HTML file?", [
   ["aaahah", false]
 ]);
 
-fetch("localhost:3000/quiz", {
+fetch("localhost:8000/api/quiz", {
   method: "POST",
   headers: {
-    "Content-Type": "localhost:3000/quiz"
+    "Content-Type": "localhost:8000/api/quiz"
   },
   body: JSON.stringify(gameData)
 })

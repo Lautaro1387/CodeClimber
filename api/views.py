@@ -111,6 +111,6 @@ def quiz_category_id(request, category, quiz_id):
     if request.method == 'POST':
         serializer = QuestionSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save(category=category)
+            serializer.save(category=category, id=quiz_id)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
