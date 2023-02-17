@@ -1,8 +1,13 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework.pagination import PageNumberPagination
+
 from .serializers import UserSerializer, QuestionSerializer
+
 from .models import User, Question
+
+from core.pagination import StandardSetPagination
 
 @api_view(['GET'])
 def apiOverview(request):
@@ -74,9 +79,11 @@ def quiz(request):
     """
     
     if request.method == 'GET':
+        paginator = StandardSetPagination()
         quizes = Question.objects.all()
-        serializer = QuestionSerializer(quizes, many=True)
-        return Response(serializer.data)
+        paginated_quizes = paginator.paginate_queryset(quizes, request)
+        serializer = QuestionSerializer(paginated_quizes, many=True)
+        return paginator.get_paginated_response(serializer.data)
     
     elif request.method == 'POST':
         serializer = QuestionSerializer(data=request.data)
@@ -90,9 +97,11 @@ def quiz_category(request, category):
     """
     returns all the questions and options that have the specific category
     """
+    paginator = StandardSetPagination()
     questions = Question.objects.filter(category=category)
-    serializer = QuestionSerializer(questions, many=True)
-    return Response(serializer.data)
+    paginated_quizes = paginator.paginate_queryset(questions, request)
+    serializer = QuestionSerializer(paginated_quizes, many=True)
+    return paginator.get_paginated_response(serializer.data)
 
 @api_view(['GET', 'POST'])
 def quiz_category_id(request, category, quiz_id):
