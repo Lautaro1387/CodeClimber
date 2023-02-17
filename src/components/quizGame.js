@@ -55,10 +55,8 @@ export const Quiz = () => {
 
   return (
       <div className="card">
-        <div className="question">
           {datos.map(pregunta =>
-          <div key={pregunta.id}>
-            <p>{pregunta.question}</p>
+          <div className="question" key={pregunta.id}>
           <div className="quizContainer">
             <div className="boton">
               <div className="options">
@@ -79,7 +77,6 @@ export const Quiz = () => {
         </div>
             )}
         </div>
-      </div>
   );
 }
 /*  const [messages, setMessages] = useState('')
