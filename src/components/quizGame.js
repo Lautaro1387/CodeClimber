@@ -9,15 +9,18 @@ export const Quiz = () => {
   const [score, setScore] = useState(0);
   const [isFinish, setIsFinish] = useState(false);
   const [remainingQuestions, setRemainingQuestions] = useState(questions.length);
+  const [datos, setDatos] = useState([]);
   
-  datesTaks = () => {
-    console.log('fetch...')
-    fetch('127.0.0.1:8000/api/quiz')
-    .then(res => res.json())
-    .then(data => 
-      console.log('Data:', data)
-      )
+  function datesTaks() {
+    console.log('fetching...')
+    useEffect(() => {
+      fetch('http://127.0.0.1:8000/api/quiz')
+        .then(response => response.json())
+        .then(data => setDatos(data))
+        .catch(error => console.error(error));
+    }, []);
   }
+
   function submitOptions(isCorrect, e) {
     if (isCorrect) {
       setScore(score + 1);
