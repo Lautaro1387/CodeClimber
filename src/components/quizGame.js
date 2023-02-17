@@ -57,6 +57,7 @@ export const Quiz = () => {
       <div className="card">
           {datos.map(pregunta =>
           <div className="question" key={pregunta.id}>
+            <p>{pregunta.question}</p>
           <div className="quizContainer">
             <div className="boton">
               <div className="options">
