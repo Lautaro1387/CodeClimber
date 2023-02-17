@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/App.css';
 import questions from '../js/questions.js';
 import {Confetti} from './confetti.js';
-
 
 export const Quiz = () => {
   const [questionFirst, setQuestionFirst] = useState(0);
@@ -11,7 +10,6 @@ export const Quiz = () => {
   const [remainingQuestions, setRemainingQuestions] = useState(questions.length);
   const [datos, setDatos] = useState([]);
   
-  function datesTaks() {
     console.log('fetching...')
     useEffect(() => {
       fetch('http://127.0.0.1:8000/api/quiz')
@@ -19,7 +17,6 @@ export const Quiz = () => {
         .then(data => setDatos(data))
         .catch(error => console.error(error));
     }, []);
-  }
 
   function submitOptions(isCorrect, e) {
     if (isCorrect) {
@@ -59,11 +56,13 @@ export const Quiz = () => {
   return (
       <div className="card">
         <div className="question">
-          <p>{questions[questionFirst].question}</p>
+          {datos.map(pregunta =>
+          <div key={pregunta.id}>
+            <p>{pregunta.question}</p>
           <div className="quizContainer">
             <div className="boton">
               <div className="options">
-                {questions[questionFirst].options.map((response) => (
+                {datos[questionFirst].options.map((response) => (
                   <button className="option-button"
                   key={response.answer}
                   onClick={(e) => submitOptions(response.isCorrect, e)}>
@@ -77,6 +76,8 @@ export const Quiz = () => {
               </div>
             </div>
           </div>
+        </div>
+            )}
         </div>
       </div>
   );
