@@ -1,27 +1,23 @@
-# from django.contrib.auth.models import AbstractUser, AbstractBaseUser
+from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-import uuid
+from django.conf import settings
 
-class User(models.Model):
-    id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True,
-                               editable=False)
-    username = models.CharField(max_length=20, null=False, unique=True, blank=False)
-    password = models.CharField(max_length=15, null=False, blank=False)
-    email = models.EmailField(max_length=40, null=False, blank=False, unique=True)
+class User(AbstractUser):
     points = models.IntegerField(default=0)
     medals = models.IntegerField(default=0)
-    is_active = models.BooleanField(default=True, null=True, blank=True)
-    is_created = models.DateTimeField(auto_now_add=True, editable=False)
+    image = models.ImageField(upload_to='users/%Y/%m/%d', null=True, blank=True)
+
+    def get_image(self):
+        if self.image:
+            return '{}{}'.format(settings.MEDIA_URL, self.image)
+        return '{}{}'.format(settings.MEDIA_URL, 'media/default.png')
 
     def get_medals(self):
         return self.medals
 
     def get_points(self):
         return self.points
-
-    def __str__(self):
-        return str(self.username + '/ id:' + str(self.id))
 
 class Question(models.Model):
     CATEGORY = (
