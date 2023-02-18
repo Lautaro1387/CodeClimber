@@ -5,16 +5,21 @@ import { Menu } from './components/menu.js';
 import { Quiz } from './components/quizGame.js';
 import { Rank } from './components/ranking.js';
 import { data } from './js/dataRank.js';
-import './styles/App.css'
 import Aboutus from "./components/about.js";
+import './styles/App.css'
 
 const App = () => {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/" element={<Log />} />
+        <Route path="/" element={<Log />} />
         <Route path="/home" element={<Menu name="Python" />} />
-        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/quiz/html/1" element={<Quiz />} />
+        <Route path="/quiz/html/2" element={<Quiz />} />
+        <Route path="/quiz/html/3" element={<Quiz />} />
+        <Route path="/quiz/css/1" element={<Quiz />} />
+        <Route path="/quiz/css/2" element={<Quiz />} />
+        <Route path="/quiz/css/3" element={<Quiz />} />
         <Route path="/about" element={<Aboutus />} />
         <Route path="/ranking" element={<Rank data={data} />} />
       </Routes>
