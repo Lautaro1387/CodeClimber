@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/quiz/css/1" element={<Quiz />} />
         <Route path="/quiz/css/2" element={<Quiz />} />
         <Route path="/quiz/css/3" element={<Quiz />} />
-        <Route path="/about" element={<Aboutus />} />
+        <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/ranking" element={<Rank data={data} />} />
       </Routes>
     </div>
