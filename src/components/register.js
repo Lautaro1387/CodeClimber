@@ -2,19 +2,40 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export const Register = (props) => {
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
-    const [name, setName] = useState('');
 
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(email);
-        if (!email)
+        if (!email || !pass || !name) {
+            alert('Please fill in all fields');
             return;
-        navigate('/home')
+        }
+        fetch('/api/users', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name, email, password: pass })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+            navigate('/home');
+        })
+        .catch(error => {
+            console.error('There was an error!', error);
+        });
     }
+
 
     return (
         <div className="auth-form-container">

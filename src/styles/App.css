@@ -298,8 +298,6 @@ button {
   overflow: hidden;
   border-radius: 20px;
 }
-
-
 .card::before {
   content: '';
   position: absolute;
@@ -309,7 +307,6 @@ button {
   animation: rotBGimg 3s linear infinite;
   transition: all 0.2s linear;
 }
-
 @keyframes rotBGimg {
   from {
     transform: rotate(0deg);
@@ -319,7 +316,6 @@ button {
     transform: rotate(360deg);
   }
 }
-
 .card::after {
   content: '';
   position: absolute;
@@ -329,11 +325,6 @@ button {
   border-radius: 15px;
 
 }
-
-/* .card:hover:before {
-  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
-  animation: rotBGimg 3.5s linear infinite;
-} */
 
 .finally {
   border-top: 1000px;
@@ -833,4 +824,49 @@ ul.popup li {
 .circle-score {
   display: flex;
   align-items: center;
+}
+
+
+
+/* Profile */
+
+.profile-box {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  transform: translateX(-50%);
+  background-color: #1a1e29;
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+}
+.profile-box img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+.profile-box .medallas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-box .medalla {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+.img-profile {
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+}
+.name-profile {
+  font-size: 40px;
 }
