@@ -152,8 +152,10 @@ a:hover {
 }
 
 .logo {
-  height: 50px;
-  margin-left: 20px;
+  width: 100px;
+  height: 90px;
+  margin-bottom: 0;
+  margin-top: auto;
 }
 
 .nav-links {
@@ -876,4 +878,65 @@ ul.popup li {
 }
 .lautros{
   margin-bottom: 13px;
+}
+
+
+.circle-1 {
+position: relative;
+height: 150px;
+width: 150px;
+border: 5px solid black;
+border-radius: 5000px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 20px;
+margin-left: 20px;
+z-index: 1;
+}
+  
+.circle-2 {
+position: relative;
+height: 100px;
+width: 100px;
+border: 5px solid orange;
+border-radius: 5000px;
+z-index: 1;
+
+}
+  
+.container-circles {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+z-index: 1;
+}
+  
+.rectangulito{
+position: relative;
+margin-left: 50px;
+ width: 200px;
+height: 100px;
+background-color: red;
+z-index: 1;
+
+}
+  
+.tosco{
+position: relative;
+height: 100px;
+margin-top: 24px;
+width: 100px;
+z-index: 1;
+}
+  
+  
+.rectangulo{
+position: absolute;
+width: 500px;
+height: 10px;
+background-color: green;
+z-index: 0;
 }
