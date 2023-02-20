@@ -9,7 +9,9 @@ import { Profile } from './components/profile.js';
 import Aboutus from "./components/about.js";
 import './styles/App.css'
 
+
 const App = () => {
+
   return (
     <div className="App">
       <Routes>
@@ -22,7 +24,7 @@ const App = () => {
         <Route path="/quiz/css/2" element={<Quiz />} />
         <Route path="/quiz/css/3" element={<Quiz />} />
         <Route path="/aboutus" element={<Aboutus />} />
-        <Route path="/profile" element={<Profile />}/>
+        <Route path="/profile" element={<Profile />} />
         <Route path="/ranking" element={<Rank data={data} />} />
       </Routes>
     </div>

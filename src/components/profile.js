@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 
 
 export const Profile = () => {
@@ -12,7 +12,7 @@ export const Profile = () => {
             const reader = new FileReader();
             reader.onload = (event) => {
               const imagen = event.target.result;
-              document.querySelector('img').src = imagen;
+              document.querySelector('img-profile').src = imagen;
             };
             reader.readAsDataURL(file);
           };

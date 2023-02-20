@@ -866,6 +866,7 @@ ul.popup li {
   cursor: pointer;
   width: 200px;
   height: 200px;
+  z-index: 1;
 }
 .name-profile {
   font-size: 40px;
