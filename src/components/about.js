@@ -12,7 +12,7 @@ const Aboutus = () => {
                 </div>
                 <div class="contentBx">
                     <h4>Lautaro Illa</h4>
-                    <h5>Project Manager</h5>
+                    <h5 className='lautros'>Project Manager <br></br>Full Stack Developer</h5>
                 </div>
                 <div class="sci">
                     <a href="https://github.com/Lautaro1387" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -44,7 +44,7 @@ const Aboutus = () => {
                 <img src={require('../images/Marcelo.jpg')} alt="Logo" className="logo-about"/>
                 </div>
                 <div class="contentBx">
-                    <h4>Marcelo Rodriguez</h4>
+                    <h4 className='marce'>Marcelo Rodriguez</h4>
                     <h5>Front End Developer</h5>
                 </div>
                 <div class="sci">
@@ -76,7 +76,7 @@ const Aboutus = () => {
                 <img src={require('../images/Vico.jpg')} alt="Logo" className="logo-about"/>
                 </div>
                 <div class="contentBx">
-                    <h4>Victoria Marquez</h4>
+                    <h4 className='vico'>Victoria Marquez</h4>
                     <h5>Back End Developer</h5>
                 </div>
                 <div class="sci">
