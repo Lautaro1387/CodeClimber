@@ -29,34 +29,27 @@ export const Login = () => {
             })
         .then(data => {
             console.log(data);
-            let userExists = false;
-            for (let i = 0; i < data.length; i++) {
-                if (!user || !pass) {
-                    swal({
-                        title: "Please fill in all fields",
-                        text: "Try again",
-                        icon: "error",
-                        button: "Ok",
-                        timer: "3500",
-                      });
-                    return;
-                } else if (data[i].username === user) {
-                    userExists = true;
-                    console.log(userExists);
-                    if (data[i].password === pass) {
-                        console.log("User exists and password matches");
-                        navigate('/home');
-                    } else {
-                        swal({
-                            title: "User and password doesn't match",
-                            text: "Try again",
-                            icon: "error",
-                            button: "Ok",
-                            timer: "3500",
-                          });
-                        return;
-                    }
-                } else {
+            const userExists = data.find((i) => i.username === user);
+            if (!user || !pass) {
+                swal({
+                    title: "Please fill in all fields",
+                    text: "Try again",
+                    icon: "error",
+                    button: "Ok",
+                    timer: "3500",
+                  });
+                return;
+            } else if (!userExists) {
+                swal({
+                    title: "User doesn't exists",
+                    text: "Try again",
+                    icon: "error",
+                    button: "Ok",
+                    timer: "3500",
+                  });
+                return;
+            } else {
+                if (userExists.password !== pass) {
                     swal({
                         title: "User and password doesn't match",
                         text: "Try again",
@@ -65,6 +58,9 @@ export const Login = () => {
                         timer: "3500",
                       });
                     return;
+                } else {
+                    console.log("login accepted")
+                    navigate("/home")
                 }
             }
         })
