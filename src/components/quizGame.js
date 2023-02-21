@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/App.css';
+import { useParams } from "react-router-dom";
 import {Confetti} from './confetti.js';
+import '../styles/App.css';
 
 export const Quiz = () => {
   const [questions, setQuestions] = useState([]);
@@ -9,14 +10,16 @@ export const Quiz = () => {
   const [isFinish, setIsFinish] = useState(false);
   const [remainingQuestions, setRemainingQuestions] = useState(10);
 
+  const { category, pagination } = useParams();
+
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://127.0.0.1:8000/api/quiz/html?p=1");
+      const response = await fetch(`http://127.0.0.1:8000/api/quiz/${category}?p=${pagination}`);
       const data = await response.json();
       setQuestions(data.results);
     };
     fetchData();
-  }, []);
+  }, [category, pagination]);
 
   function submitOptions(isCorrect, e) {
     if (isCorrect) {

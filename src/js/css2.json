@@ -1,0 +1,237 @@
+{
+    "count": 30,
+    "next": "http://127.0.0.1:8000/api/quiz/css?format=json&p=3",
+    "previous": "http://127.0.0.1:8000/api/quiz/css?format=json",
+    "results": [
+    {
+    "id": 41,
+    "question": "What does CSS stand for?",
+    "category": "CSS",
+    "options": [
+    {
+    "answer": "Creative Style Sheets",
+    "is_correct": false
+    },
+    {
+    "answer": "Cascading Style Sheets",
+    "is_correct": true
+    },
+    {
+    "answer": "Colorful Style Sheets",
+    "is_correct": false
+    },
+    {
+    "answer": "Coded Style Sheets",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 42,
+    "question": "Which CSS property is used to add a background color to an element?",
+    "category": "CSS",
+    "options": [
+    {
+    "answer": "background-image",
+    "is_correct": false
+    },
+    {
+    "answer": "background-color",
+    "is_correct": true
+    },
+    {
+    "answer": "color",
+    "is_correct": false
+    },
+    {
+    "answer": "font-color",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 43,
+    "question": "Which CSS selector is used to select an HTML element with a specific id?",
+    "category": "CSS",
+    "options": [
+    {
+    "answer": "#",
+    "is_correct": true
+    },
+    {
+    "answer": ".",
+    "is_correct": false
+    },
+    {
+    "answer": ">",
+    "is_correct": false
+    },
+    {
+    "answer": "*",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 44,
+    "question": "Which CSS property is used to center align text?",
+    "category": "CSS",
+    "options": [
+    {
+    "answer": "text-align",
+    "is_correct": true
+    },
+    {
+    "answer": "align",
+    "is_correct": false
+    },
+    {
+    "answer": "justify",
+    "is_correct": false
+    },
+    {
+    "answer": "center-align",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 45,
+    "question": "Which CSS selector is used to select all elements of a particular type?",
+    "category": "CSS",
+    "options": [
+    {
+    "answer": "#",
+    "is_correct": false
+    },
+    {
+    "answer": ".",
+    "is_correct": false
+    },
+    {
+    "answer": ">",
+    "is_correct": false
+    },
+    {
+    "answer": "*",
+    "is_correct": true
+    }
+    ]
+    },
+    {
+    "id": 46,
+    "question": "Which CSS property is used to set the space between lines of text?",
+    "category": "CSS",
+    "options": [
+    {
+    "answer": "line-height",
+    "is_correct": true
+    },
+    {
+    "answer": "text-line",
+    "is_correct": false
+    },
+    {
+    "answer": "text-space",
+    "is_correct": false
+    },
+    {
+    "answer": "space-between",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 47,
+    "question": "Which CSS property is used to create a border around an element?",
+    "category": "CSS",
+    "options": [
+    {
+    "answer": "border-style",
+    "is_correct": false
+    },
+    {
+    "answer": "border-color",
+    "is_correct": false
+    },
+    {
+    "answer": "border-width",
+    "is_correct": false
+    },
+    {
+    "answer": "All of the above",
+    "is_correct": true
+    }
+    ]
+    },
+    {
+    "id": 48,
+    "question": "Which CSS property is used to make text bold?",
+    "category": "CSS",
+    "options": [
+    {
+    "answer": "font-style",
+    "is_correct": false
+    },
+    {
+    "answer": "font-weight",
+    "is_correct": true
+    },
+    {
+    "answer": "font-variant",
+    "is_correct": false
+    },
+    {
+    "answer": "None of the above",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 49,
+    "question": "Which CSS selector is used to select the first child element of an HTML element?",
+    "category": "CSS",
+    "options": [
+    {
+    "answer": ":last-child",
+    "is_correct": false
+    },
+    {
+    "answer": ":only-child",
+    "is_correct": false
+    },
+    {
+    "answer": ":first-child",
+    "is_correct": true
+    },
+    {
+    "answer": ":nth-child",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 50,
+    "question": "Which CSS property is used to create a drop shadow effect?",
+    "category": "CSS",
+    "options": [
+    {
+    "answer": "box-shadow",
+    "is_correct": true
+    },
+    {
+    "answer": "text-shadow",
+    "is_correct": false
+    },
+    {
+    "answer": "shadow-effect",
+    "is_correct": false
+    },
+    {
+    "answer": "drop-shadow",
+    "is_correct": false
+    }
+    ]
+    }
+    ]
+    }

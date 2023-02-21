@@ -1,0 +1,237 @@
+{
+    "count": 30,
+    "next": "http://127.0.0.1:8000/api/quiz/javascript?format=json&p=2",
+    "previous": null,
+    "results": [
+    {
+    "id": 91,
+    "question": "What are variables in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "Placeholders for values",
+    "is_correct": true
+    },
+    {
+    "answer": "Functions that perform actions",
+    "is_correct": false
+    },
+    {
+    "answer": "Arrays of values",
+    "is_correct": false
+    },
+    {
+    "answer": "CSS styles",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 92,
+    "question": "What is the difference between 'var', 'let' and 'const' in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "They are interchangeable",
+    "is_correct": false
+    },
+    {
+    "answer": "'var' is used for global variables, 'let' and 'const' are used for block-scoped variables",
+    "is_correct": true
+    },
+    {
+    "answer": "'let' is used for global variables, 'var' and 'const' are used for block-scoped variables",
+    "is_correct": false
+    },
+    {
+    "answer": "'const' is used for variables that can be re-assigned, 'let' and 'var' are used for variables that cannot be re-assigned",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 93,
+    "question": "What is the purpose of comments in JavaScript code?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "To make the code look better",
+    "is_correct": false
+    },
+    {
+    "answer": "To explain what the code does",
+    "is_correct": true
+    },
+    {
+    "answer": "To prevent errors from occurring",
+    "is_correct": false
+    },
+    {
+    "answer": "None of the above",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 94,
+    "question": "What is an array in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "A variable that holds multiple values",
+    "is_correct": true
+    },
+    {
+    "answer": "A type of function",
+    "is_correct": false
+    },
+    {
+    "answer": "An HTML element",
+    "is_correct": false
+    },
+    {
+    "answer": "A CSS property",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 95,
+    "question": "What is the purpose of conditional statements in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "To loop through code",
+    "is_correct": false
+    },
+    {
+    "answer": "To perform mathematical calculations",
+    "is_correct": false
+    },
+    {
+    "answer": "To test for specific conditions and execute code accordingly",
+    "is_correct": true
+    },
+    {
+    "answer": "To define functions",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 96,
+    "question": "What is a function in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "A type of array",
+    "is_correct": false
+    },
+    {
+    "answer": "A way to execute a block of code",
+    "is_correct": true
+    },
+    {
+    "answer": "A CSS style",
+    "is_correct": false
+    },
+    {
+    "answer": "An HTML element",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 97,
+    "question": "What is an event listener in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "A type of array",
+    "is_correct": false
+    },
+    {
+    "answer": "A way to loop through code",
+    "is_correct": false
+    },
+    {
+    "answer": "An HTML element",
+    "is_correct": false
+    },
+    {
+    "answer": "A function that is called when an event occurs",
+    "is_correct": true
+    }
+    ]
+    },
+    {
+    "id": 98,
+    "question": "What is the difference between '==' and '===' in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "They are interchangeable",
+    "is_correct": false
+    },
+    {
+    "answer": "'==' compares values, while '===' compares both values and data types",
+    "is_correct": true
+    },
+    {
+    "answer": "'===' compares values, while '==' compares both values and data types",
+    "is_correct": false
+    },
+    {
+    "answer": "None of the above",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 99,
+    "question": "What is the purpose of the 'return' statement in a JavaScript function?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "To stop the function from executing",
+    "is_correct": false
+    },
+    {
+    "answer": "To output a value from the function",
+    "is_correct": true
+    },
+    {
+    "answer": "To define the parameters of the function",
+    "is_correct": false
+    },
+    {
+    "answer": "None of the above",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 100,
+    "question": "What is the purpose of the 'document' object in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "To define variables",
+    "is_correct": false
+    },
+    {
+    "answer": "To manipulate the structure and content of a web page",
+    "is_correct": true
+    },
+    {
+    "answer": "To manipulate the structure and content of a web page",
+    "is_correct": false
+    },
+    {
+    "answer": "None of the above",
+    "is_correct": false
+    }
+    ]
+    }
+    ]
+    }

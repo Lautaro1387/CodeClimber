@@ -1,0 +1,237 @@
+{
+    "count": 30,
+    "next": null,
+    "previous": "http://127.0.0.1:8000/api/quiz/javascript?format=json&p=2",
+    "results": [
+    {
+    "id": 111,
+    "question": "Which of the following is NOT a primitive data type in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "boolean",
+    "is_correct": false
+    },
+    {
+    "answer": "number",
+    "is_correct": false
+    },
+    {
+    "answer": "string",
+    "is_correct": false
+    },
+    {
+    "answer": "object",
+    "is_correct": true
+    }
+    ]
+    },
+    {
+    "id": 112,
+    "question": "Which of the following array methods does NOT modify the original array?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "map()",
+    "is_correct": false
+    },
+    {
+    "answer": "slice()",
+    "is_correct": true
+    },
+    {
+    "answer": "filter()",
+    "is_correct": false
+    },
+    {
+    "answer": "splice()",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 113,
+    "question": "What is the purpose of the try...catch statement in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "To execute a block of code when an error occurs",
+    "is_correct": false
+    },
+    {
+    "answer": "To create a new object from an existing one",
+    "is_correct": false
+    },
+    {
+    "answer": "To catch and handle errors that occur in a block of code",
+    "is_correct": true
+    },
+    {
+    "answer": "To remove an element from an array",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 114,
+    "question": "Which of the following is NOT a valid way to declare a function in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "function myFunc() {}",
+    "is_correct": false
+    },
+    {
+    "answer": "myFunc()",
+    "is_correct": true
+    },
+    {
+    "answer": "let myFunc = function() {}",
+    "is_correct": false
+    },
+    {
+    "answer": "myFunc = () => {}",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 115,
+    "question": "Which of the following is NOT a way to declare a variable in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "let myVar = 10;",
+    "is_correct": false
+    },
+    {
+    "answer": "myVar = 40;",
+    "is_correct": true
+    },
+    {
+    "answer": "const myVar = 20;",
+    "is_correct": false
+    },
+    {
+    "answer": "const myVar = 20;",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 116,
+    "question": "Which of the following is NOT a valid way to declare a JavaScript object?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "const myObj = {}",
+    "is_correct": false
+    },
+    {
+    "answer": "const myObj = new Object()",
+    "is_correct": false
+    },
+    {
+    "answer": "const myObj = {prop1: 1, prop2: 2}",
+    "is_correct": false
+    },
+    {
+    "answer": "const myObj = Object.create({})",
+    "is_correct": true
+    }
+    ]
+    },
+    {
+    "id": 117,
+    "question": "What is the purpose of the typeof operator in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "To compare two values for equality",
+    "is_correct": false
+    },
+    {
+    "answer": "To convert a value to a different type",
+    "is_correct": false
+    },
+    {
+    "answer": "To declare a variable with a specific type",
+    "is_correct": false
+    },
+    {
+    "answer": "To check the type of an object or value",
+    "is_correct": true
+    }
+    ]
+    },
+    {
+    "id": 118,
+    "question": "What is the purpose of the Object.keys() method in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "To return an array of all the values in an object",
+    "is_correct": false
+    },
+    {
+    "answer": "To return an array of all the keys in an object",
+    "is_correct": true
+    },
+    {
+    "answer": "To return an array of all the values and keys in an object",
+    "is_correct": false
+    },
+    {
+    "answer": "To return a single value from an object based on a specified key",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 119,
+    "question": "Which method can be used to remove the last element of an array in JavaScript?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "shift()",
+    "is_correct": false
+    },
+    {
+    "answer": "removelast()",
+    "is_correct": false
+    },
+    {
+    "answer": "pop()",
+    "is_correct": true
+    },
+    {
+    "answer": "splice()",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 120,
+    "question": "Which method is used to add an element to the end of an array?",
+    "category": "JavaScript",
+    "options": [
+    {
+    "answer": "push()",
+    "is_correct": true
+    },
+    {
+    "answer": "pop()",
+    "is_correct": false
+    },
+    {
+    "answer": "add()",
+    "is_correct": false
+    },
+    {
+    "answer": "append()",
+    "is_correct": false
+    }
+    ]
+    }
+    ]
+    }

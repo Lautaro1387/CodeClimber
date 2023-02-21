@@ -6,7 +6,7 @@ export const Navigation = () => {
   const location = useLocation();
 
   // Si la ubicación actual es Log o Quiz, no se mostrará la barra de navegación.
-  if (location.pathname === '/quiz/html/1' || location.pathname === '/quiz/html/2' || location.pathname === '/quiz/html/3' || location.pathname === '/quiz/css/1' || location.pathname === '/quiz/css/2' || location.pathname === '/quiz/css/3' || location.pathname === '/') {
+  if (location.pathname === '/quiz/html/1' || location.pathname === '/quiz/html/2' || location.pathname === '/quiz/html/3' || location.pathname === '/quiz/css/1' || location.pathname === '/quiz/css/2' || location.pathname === '/quiz/css/3' || location.pathname === '/login' || location.pathname === '/register') {
     return null;
   }
   const handleProfileClick = () => {
@@ -32,7 +32,8 @@ export const Navigation = () => {
         <li>
           <a href="ranking"><i class="fa-solid fa-trophy"></i></a>
         </li>
-        <li><a href="#" onClick={handleProfileClick}><i class="fa-solid fa-user"></i></a>
+        <li>
+          <a href="#" onClick={handleProfileClick}><i class="fa-solid fa-user"></i></a>
           {showPopup && (
             <div className="popup">
               <ul className="popup-links">

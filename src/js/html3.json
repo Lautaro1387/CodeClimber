@@ -1,0 +1,237 @@
+{
+    "count": 30,
+    "next": null,
+    "previous": "http://127.0.0.1:8000/api/quiz/html?format=json&p=2",
+    "results": [
+    {
+    "id": 21,
+    "question": "What is the role of the \"alt\" attribute on the <img> element in HTML?",
+    "category": "HTML",
+    "options": [
+    {
+    "answer": "It specifies the width and height of the image.",
+    "is_correct": false
+    },
+    {
+    "answer": "It specifies the URL of the image.",
+    "is_correct": false
+    },
+    {
+    "answer": "It specifies a text description of the image for accessibility purposes.",
+    "is_correct": true
+    },
+    {
+    "answer": "It specifies the alignment of the image.",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 22,
+    "question": "How can you create a hyperlink that opens in a new window in HTML?",
+    "category": "HTML",
+    "options": [
+    {
+    "answer": "Set the \"target\" attribute to \"_new\".",
+    "is_correct": false
+    },
+    {
+    "answer": "Set the \"target\" attribute to \"_blank\".",
+    "is_correct": true
+    },
+    {
+    "answer": "Set the \"new-window\" attribute to \"true\".",
+    "is_correct": false
+    },
+    {
+    "answer": "Set the \"open-window\" attribute to \"true\".",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 23,
+    "question": "What is the role of the \\\"header\\\" element in HTML?",
+    "category": "HTML",
+    "options": [
+    {
+    "answer": "It is used to define a footer section.",
+    "is_correct": false
+    },
+    {
+    "answer": "It is used to mark up a navigation menu.",
+    "is_correct": false
+    },
+    {
+    "answer": "It is used to define a section of a document.",
+    "is_correct": false
+    },
+    {
+    "answer": "It is used to represent introductory content for a page or section.",
+    "is_correct": true
+    }
+    ]
+    },
+    {
+    "id": 24,
+    "question": "What is the role of the \\\"meter\\\" element in HTML?",
+    "category": "HTML",
+    "options": [
+    {
+    "answer": "It is used to create a scrolling text marquee.",
+    "is_correct": false
+    },
+    {
+    "answer": "It is used to represent a scalar measurement within a known range.",
+    "is_correct": true
+    },
+    {
+    "answer": "It is used to mark up a quotation.",
+    "is_correct": false
+    },
+    {
+    "answer": "It is used to represent a section of a document.",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 25,
+    "question": "How can you embed a video in an HTML page?",
+    "category": "HTML",
+    "options": [
+    {
+    "answer": "Use the <video> element and specify the URL of the video file.",
+    "is_correct": true
+    },
+    {
+    "answer": "Use the <object> element and specify the URL of the video file.",
+    "is_correct": false
+    },
+    {
+    "answer": "All options are correct.",
+    "is_correct": false
+    },
+    {
+    "answer": "Use the <embed> element and specify the URL of the video file.",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 26,
+    "question": "What is the role of the \\\"figcaption\\\" element in HTML?",
+    "category": "HTML",
+    "options": [
+    {
+    "answer": "It is used to represent a section of a document.",
+    "is_correct": false
+    },
+    {
+    "answer": "It is used to mark up a list of items.",
+    "is_correct": false
+    },
+    {
+    "answer": "It is used to group together a caption and the media it is describing.",
+    "is_correct": true
+    },
+    {
+    "answer": "It is used to mark up a quotation.",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 27,
+    "question": "What is the difference between the \\\"absolute\\\" and \\\"fixed\\\" position values in CSS?",
+    "category": "HTML",
+    "options": [
+    {
+    "answer": "All options are correct.",
+    "is_correct": false
+    },
+    {
+    "answer": "\"Absolute\" and \"fixed\" are interchangeable and can be used for both element and browser window positioning.",
+    "is_correct": false
+    },
+    {
+    "answer": "\"Absolute\" positions an element relative to the browser window, while \"fixed\" positions an element relative to its nearest positioned ancestor.",
+    "is_correct": false
+    },
+    {
+    "answer": "\"Absolute\" positions an element relative to its nearest positioned ancestor, while \"fixed\" positions an element relative to the browser window.",
+    "is_correct": true
+    }
+    ]
+    },
+    {
+    "id": 28,
+    "question": "What is the role of the \"nav\" element in HTML?",
+    "category": "HTML",
+    "options": [
+    {
+    "answer": "It is used to represent a section of a document.",
+    "is_correct": false
+    },
+    {
+    "answer": "It is used to mark up a quotation.",
+    "is_correct": false
+    },
+    {
+    "answer": "It is used to mark up a navigation menu.",
+    "is_correct": true
+    },
+    {
+    "answer": "It is used to mark up a list of items.",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 29,
+    "question": "What is the difference between a \"div\" and a \"span\" element in HTML?",
+    "category": "HTML",
+    "options": [
+    {
+    "answer": "\"Div\" is a block-level element, while \"span\" is an inline-level element.",
+    "is_correct": true
+    },
+    {
+    "answer": "\"Span\" is a block-level element, while \"div\" is an inline-level element.",
+    "is_correct": false
+    },
+    {
+    "answer": "\"Div\" and \"span\" are interchangeable and can be used for both block-level and inline-level elements.",
+    "is_correct": false
+    },
+    {
+    "answer": "None of the above.",
+    "is_correct": false
+    }
+    ]
+    },
+    {
+    "id": 30,
+    "question": "What is the role of the \"article\" element in HTML?",
+    "category": "HTML",
+    "options": [
+    {
+    "answer": "It is used to represent a self-contained piece of content, such as a blog post or news article.",
+    "is_correct": true
+    },
+    {
+    "answer": "It is used to mark up a navigation menu.",
+    "is_correct": false
+    },
+    {
+    "answer": "It is used to mark up a quotation.",
+    "is_correct": false
+    },
+    {
+    "answer": "It is used to mark up a list of items.",
+    "is_correct": false
+    }
+    ]
+    }
+    ]
+    }
