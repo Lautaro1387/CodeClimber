@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.pagination import PageNumberPagination
 
-from .serializers import UserSerializer, QuestionSerializer
+from .serializers import UserSerializer, QuestionSerializer, SignUpSerializer
 
 from .models import User, Question
 
@@ -39,7 +39,7 @@ def users(request):
         return Response(serializer.data)
 
     elif request.method == 'POST':
-        serializer = UserSerializer(data=request.data)
+        serializer = SignUpSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)

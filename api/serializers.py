@@ -21,3 +21,12 @@ class UserSerializer(ModelSerializer):
     class Meta:
         model = User
         fields = '__all__'
+
+class SignUpSerializer(ModelSerializer):
+    class Meta:
+        model = User
+        fields = (
+            "username",
+            "password",
+            "email"
+        )

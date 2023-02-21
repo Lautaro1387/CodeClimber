@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import bcrypt from 'bcryptjs';
 
-export const Login = (props) => {
+export const Login = () => {
     const [user, setUser] = useState('');
     const [pass, setPass] = useState('');
 
@@ -14,14 +13,12 @@ export const Login = (props) => {
         if (!user)
             return;
 
-        const hashedPass = bcrypt.hashSync(pass, 10); // encripta la contraseña
-
         fetch('http://127.0.0.1:8000/api/users', {
             method: 'GET',
             headers: {
             'Content-Type': 'application/json',
         }
-        })  
+        })
         .then(response => {
             if (response.status >= 200 && response.status < 300) {
                 return response.json();
@@ -31,16 +28,17 @@ export const Login = (props) => {
             })
         .then(data => {
             console.log(data);
-            let userExists = false
+            let userExists = false;
             for (let i = 0; i < data.length; i++) {
                 if (data[i].username === user) {
                     userExists = true;
-                    console.log(userExists)
-                    if (bcrypt.compareSync(pass, data[i].password) === true) {
+                    console.log(userExists);
+                    if (data[i].password === pass) {
                         console.log("User exists and password matches");
                         navigate('/home');
                     } else {
-                        console.log("Password doesn't match")
+                        alert("Password and user doesn't match");
+                        console.log("Password doesn't match");
                     }
             }
             }
@@ -60,7 +58,7 @@ export const Login = (props) => {
                 <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
                 <button type="submit"> Log In </button>
             </form>
-            <button className="link-btn" onClick={() => props.onFormSwitch('register')}>Don't have an account? Register here.</button>
+            <button className="link-btn" onClick={() => window.location.href = "/signup"}>Don't have an account? Register here.</button>
         </div>
     )
 }
