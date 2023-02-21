@@ -877,3 +877,32 @@ ul.popup li {
 .lautros{
   margin-bottom: 13px;
 }
+
+.swal-modal {
+  background-color: #1a1e29 !important;
+  text-align: center !important;
+  color: black !important;
+  border-color: #01c38e !important;
+  box-shadow: 0 3px 13px 8px black !important;
+  border: 3px solid #01c38e !important;
+  border-radius: 10px !important;
+}
+
+.swal-button {
+  background-color: #01c38e !important;
+  color: black !important;
+}
+
+.swal-footer {
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex !important;
+}
+
+.swal-title {
+  color: white !important;
+}
+
+.swal-text {
+  color: white !important;
+}
