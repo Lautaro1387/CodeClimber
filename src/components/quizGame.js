@@ -49,7 +49,7 @@ export const Quiz = () => {
               Volver a jugar
             </button>
             <p></p>
-            <button onClick={() => (window.location.href = "home")}>
+            <button onClick={() => (window.location.href = "/home")}>
               Volver al inicio
             </button>
           </div>

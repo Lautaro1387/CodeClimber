@@ -16,7 +16,7 @@ export const Navigation = () => {
   return (
     <nav className="navbar">
     <div class="circle">
-      <a href="home" className='logo-home'>
+      <a href="/home" className='logo-home'>
         <img
           src={require('../images/Logo.png')}
           alt="Logo"
@@ -27,10 +27,10 @@ export const Navigation = () => {
     <div>
       <ul className="nav-links">
         <li>
-          <a href="quiz"><i class="fa-sharp fa-solid fa-book"></i></a>
+          <a href="/quiz"><i class="fa-sharp fa-solid fa-book"></i></a>
         </li>
         <li>
-          <a href="ranking"><i class="fa-solid fa-trophy"></i></a>
+          <a href="/ranking"><i class="fa-solid fa-trophy"></i></a>
         </li>
         <li>
           <a href="#" onClick={handleProfileClick}><i class="fa-solid fa-user"></i></a>
@@ -38,10 +38,10 @@ export const Navigation = () => {
             <div className="popup">
               <ul className="popup-links">
                 <li>
-                  <a href="profile">Profile</a>
+                  <a href="/profile">Profile</a>
                 </li>
                 <li>
-                  <a href="aboutus">About us</a>
+                  <a href="/aboutus">About us</a>
                 </li>
                 <li>
                   <a href="/login">Log out</a>

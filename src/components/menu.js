@@ -5,7 +5,7 @@ export const Menu = () => {
         <div>
             <h1 className='title-main'>Code Climber</h1>
             <div className='container-main'>
-                <a href='quiz/html' className='link-project'>
+                <a href='/quiz/html' className='link-project'>
                     <div className='container-menu'>
                         <img
                             className='img-medals'
@@ -24,7 +24,7 @@ export const Menu = () => {
                 </a>
             </div>
             <div className='container-main'>
-                <a href='quiz/css' className='link-project'>
+                <a href='/quiz/css' className='link-project'>
                     <div className='container-menu'>
                         <img
                             className='img-medals'
