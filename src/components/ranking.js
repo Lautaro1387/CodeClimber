@@ -1,12 +1,7 @@
 import React from 'react';
+import {data} from '../js/dataRank.js';
 
-export const data = [
-  { id: 1, name: 'Felipe', points: 100, photoUrl: 'https://example.com/photo3.jpg' },
-  { id: 2, name: 'Lautaro', points: 200, photoUrl: 'https://example.com/photo3.jpg' },
-  { id: 3, name: 'Santiago', points: 300, photoUrl: 'https://example.com/photo3.jpg' },
-];
-
-export const Rank = (props) => {
+export const Rank = () => {
   return (
 <div className="img-rank">
   <table className='table-ranking'>
@@ -21,9 +16,9 @@ export const Rank = (props) => {
           <td>
             <div className="user-data">
               <div className="circle-img">
-                <img src={user.photoUrl} alt={`${user.name}`} />
+                <img src={user.image} alt={`${user.username}`} />
               </div>
-              <span className="user-name">{user.name}</span>
+              <span className="user-name">{user.username}</span>
               <span className="user-points">{user.points} puntos</span>
             </div>
           </td>

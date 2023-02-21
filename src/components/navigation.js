@@ -18,7 +18,7 @@ export const Navigation = () => {
     <div class="circle">
       <a href="home" className='logo-home'>
         <img
-          src={require('../images/Logo1.png')}
+          src={require('../images/Logo.png')}
           alt="Logo"
           className="logo"
         />

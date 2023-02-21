@@ -152,10 +152,8 @@ a:hover {
 }
 
 .logo {
-  width: 100px;
-  height: 90px;
-  margin-bottom: 0;
-  margin-top: auto;
+  height: 50px;
+  margin-left: 20px;
 }
 
 .nav-links {
@@ -832,47 +830,6 @@ ul.popup li {
 
 /* Profile */
 
-.profile-box {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  margin: 20px;
-  transform: translateX(-50%);
-  background-color: #1a1e29;
-  border: 2px solid #000;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  justify-content: center;
-  align-items: center;
-}
-.profile-box img {
-  border-radius: 50%;
-  cursor: pointer;
-}
-.profile-box .medallas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.profile-box .medalla {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #ccc;
-  margin: 0 10px;
-}
-.img-profile {
-  text-align: center;
-  border-radius: 50%;
-  cursor: pointer;
-  width: 200px;
-  height: 200px;
-  z-index: 1;
-}
-.name-profile {
-  font-size: 40px;
-}
 .marce , .vico{
   margin-top: 3px;
 }
@@ -880,63 +837,47 @@ ul.popup li {
   margin-bottom: 13px;
 }
 
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-.circle-1 {
-position: relative;
-height: 150px;
-width: 150px;
-border: 5px solid black;
-border-radius: 5000px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-right: 20px;
-margin-left: 20px;
-z-index: 1;
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
-  
-.circle-2 {
-position: relative;
-height: 100px;
-width: 100px;
-border: 5px solid orange;
-border-radius: 5000px;
-z-index: 1;
 
+.img-profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
-  
-.container-circles {
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-z-index: 1;
-}
-  
-.rectangulito{
-position: relative;
-margin-left: 50px;
- width: 200px;
-height: 100px;
-background-color: red;
-z-index: 1;
 
+.name-profile {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-  
-.tosco{
-position: relative;
-height: 100px;
-margin-top: 24px;
-width: 100px;
-z-index: 1;
+
+.medallas {
+  display: flex;
 }
+
+.medalla {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+}
+.img-profile {
   
-  
-.rectangulo{
-position: absolute;
-width: 500px;
-height: 10px;
-background-color: green;
-z-index: 0;
 }
