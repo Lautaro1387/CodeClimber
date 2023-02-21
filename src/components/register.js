@@ -18,7 +18,6 @@ export const Register = () => {
                 text: "Try again",
                 icon: "error",
                 button: "Ok",
-                buttonColor: "green",
                 timer: "3500",
               });
             return;
@@ -28,7 +27,6 @@ export const Register = () => {
                 text: "Try again",
                 icon: "error",
                 button: "Ok",
-                buttonColor: "green",
                 timer: "3500",
               });
             return;
@@ -38,7 +36,6 @@ export const Register = () => {
                 text: "Try again",
                 icon: "error",
                 button: "Ok",
-                buttonColor: "green",
                 timer: "3500",
               });
             return;
@@ -48,7 +45,6 @@ export const Register = () => {
                 text: "Try again",
                 icon: "error",
                 button: "OK",
-                buttonColor: "green",
                 timer: "3500",
               });
             return;
@@ -58,7 +54,6 @@ export const Register = () => {
                 text: "Try again",
                 icon: "error",
                 button: "OK",
-                buttonColor: "green",
                 timer: "3500",
               });
             return;
@@ -68,7 +63,6 @@ export const Register = () => {
                 text: "Try again",
                 icon: "error",
                 button: "OK",
-                buttonColor: "green",
                 timer: "3500",
               });
             return;
@@ -95,7 +89,6 @@ export const Register = () => {
                         text: "Try again",
                         icon: "error",
                         button: "OK",
-                        buttonColor: "green",
                         timer: "3500",
                         });
                     return;
@@ -105,7 +98,6 @@ export const Register = () => {
                         text: "Try again",
                         icon: "error",
                         button: "OK",
-                        buttonColor: "green",
                         timer: "3500",
                         });
                     return;
