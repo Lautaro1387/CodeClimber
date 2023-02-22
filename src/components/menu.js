@@ -16,12 +16,6 @@ export const Menu = () => {
                         <div>
                             <p className='name-project'>HTML</p>
                         </div>
-                        <div className='circle-score'>
-                            <img
-                                className='img-score'
-                                src='https://imgs.search.brave.com/ISy-KbO_iPmWSCF1H6OHK7dfDZNILxiBa2M76JpAm8c/rs:fit:512:512:1/g:ce/aHR0cDovL2ljb24t/aWNvbnMuY29tL2lj/b25zMi81NjIvUE5H/LzUxMi9wZXJmZWN0/LWNpcmNsZV9pY29u/LWljb25zLmNvbV81/MzkyOC5wbmc'
-                                alt='score' />
-                        </div>
                     </div>
                 </a>
             </div>
@@ -34,12 +28,6 @@ export const Menu = () => {
                             alt='medals' />
                         <div>
                             <p className='name-project'>CSS</p>
-                        </div>
-                        <div className='circle-score'>
-                            <img
-                                className='img-score'
-                                src='https://imgs.search.brave.com/ISy-KbO_iPmWSCF1H6OHK7dfDZNILxiBa2M76JpAm8c/rs:fit:512:512:1/g:ce/aHR0cDovL2ljb24t/aWNvbnMuY29tL2lj/b25zMi81NjIvUE5H/LzUxMi9wZXJmZWN0/LWNpcmNsZV9pY29u/LWljb25zLmNvbV81/MzkyOC5wbmc'
-                                alt='score' />
                         </div>
                     </div>
                 </a>
@@ -54,12 +42,6 @@ export const Menu = () => {
                         <div>
                             <p className='name-project'>JavaScript</p>
                         </div>
-                        <div className='circle-score'>
-                            <img
-                                className='img-score'
-                                src='https://imgs.search.brave.com/ISy-KbO_iPmWSCF1H6OHK7dfDZNILxiBa2M76JpAm8c/rs:fit:512:512:1/g:ce/aHR0cDovL2ljb24t/aWNvbnMuY29tL2lj/b25zMi81NjIvUE5H/LzUxMi9wZXJmZWN0/LWNpcmNsZV9pY29u/LWljb25zLmNvbV81/MzkyOC5wbmc'
-                                alt='score' />
-                        </div>
                     </div>
                 </a>
             </div>
@@ -73,18 +55,12 @@ export const Menu = () => {
                         <div>
                             <p className='name-project'>Python</p>
                         </div>
-                        <div className='circle-score'>
-                            <img
-                                className='img-score'
-                                src='https://imgs.search.brave.com/ISy-KbO_iPmWSCF1H6OHK7dfDZNILxiBa2M76JpAm8c/rs:fit:512:512:1/g:ce/aHR0cDovL2ljb24t/aWNvbnMuY29tL2lj/b25zMi81NjIvUE5H/LzUxMi9wZXJmZWN0/LWNpcmNsZV9pY29u/LWljb25zLmNvbV81/MzkyOC5wbmc'
-                                alt='score' />
-                        </div>
                     </div>
                 </a>
             </div>
             <footer>
-                <Aboutus/>
-                </footer>
+                <Aboutus />
+            </footer>
         </div>
     )
 }

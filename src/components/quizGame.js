@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
-import {Confetti} from './confetti.js';
+import { Confetti } from './confetti.js';
 import '../App.css';
 
 export const Quiz = () => {

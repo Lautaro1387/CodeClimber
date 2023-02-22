@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
   color: #01c38e;
-  background-color: #1a1e29;
 }
 
 .auth-form-container,
@@ -23,7 +22,9 @@
     border: 3px solid #01c38e;
     border-radius: 10px;
     margin: 0.5rem;
-    background-color: #1a1e29;
+    background-color: none;
+    backdrop-filter: blur(10px);
+
   }
 }
 
@@ -57,9 +58,11 @@ button {
 }
 
 :root {
-  background-color: #1a1e29;
   margin: 0;
   padding: 0;
+  background-image: url('./images/lautroll.jpg');
+  background-size: cover;
+
 }
 
 .container-menu {
@@ -77,7 +80,7 @@ button {
 .img-medals {
   width: 60px;
   height: 60px;
-  margin-right: 10px;
+  margin-left: 30px;
 }
 
 .img-score {
@@ -90,6 +93,9 @@ button {
   color: #01c38e;
   font-weight: bold;
   font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 500px;
 }
 
 .link-project {
@@ -298,6 +304,7 @@ button {
   overflow: hidden;
   border-radius: 20px;
 }
+
 .card::before {
   content: '';
   position: absolute;
@@ -307,6 +314,7 @@ button {
   animation: rotBGimg 3s linear infinite;
   transition: all 0.2s linear;
 }
+
 @keyframes rotBGimg {
   from {
     transform: rotate(0deg);
@@ -316,6 +324,7 @@ button {
     transform: rotate(360deg);
   }
 }
+
 .card::after {
   content: '';
   position: absolute;
@@ -359,7 +368,8 @@ button {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 150px;
-  background-color:#07182E;
+  background-color: #1f3757;
+
 }
 
 .container-about .card-about {
@@ -591,7 +601,6 @@ button {
   margin-top: 60px;
 }
 
-
 .table-ranking {
   width: 700px;
   height: 100%;
@@ -636,7 +645,8 @@ th {
   border-spacing: 3px 10px;
 }
 
-.table-ranking th, .table-ranking td {
+.table-ranking th,
+.table-ranking td {
   border: none;
   padding: 0;
   vertical-align: middle;
@@ -705,6 +715,7 @@ th {
   background-color: gray;
   color: white;
 }
+
 .popup {
   position: absolute;
   top: 65px;
@@ -717,13 +728,16 @@ th {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
+
 .popup ul {
   list-style: none;
 }
+
 ul.popup {
   margin-left: 0;
   padding-left: 0;
 }
+
 ul.popup {
   margin-left: 0;
   padding-left: 0;
@@ -734,6 +748,7 @@ ul.popup li {
   padding: 8px 12px;
   cursor: pointer;
 }
+
 .name-project {
   display: inline-block;
   white-space: nowrap;
@@ -777,6 +792,7 @@ ul.popup li {
   font-weight: bold;
   margin-right: 5px;
 }
+
 .box {
   display: flex;
   align-items: center;
@@ -822,17 +838,21 @@ ul.popup li {
   flex-direction: column;
   justify-content: center;
 }
+
 .circle-score {
   display: flex;
   align-items: center;
 }
 
-.marce , .vico{
+.marce,
+.vico {
   margin-top: 3px;
 }
-.lautros{
+
+.lautros {
   margin-bottom: 13px;
 }
+
 /* Profile */
 
 .profile-container {
@@ -1067,6 +1087,7 @@ button {
   overflow: hidden;
   border-radius: 20px;
 }
+
 .card::before {
   content: '';
   position: absolute;
@@ -1076,6 +1097,7 @@ button {
   animation: rotBGimg 3s linear infinite;
   transition: all 0.2s linear;
 }
+
 @keyframes rotBGimg {
   from {
     transform: rotate(0deg);
@@ -1085,6 +1107,7 @@ button {
     transform: rotate(360deg);
   }
 }
+
 .card::after {
   content: '';
   position: absolute;
@@ -1403,7 +1426,8 @@ th {
   border-spacing: 3px 10px;
 }
 
-.table-ranking th, .table-ranking td {
+.table-ranking th,
+.table-ranking td {
   border: none;
   padding: 0;
   vertical-align: middle;
@@ -1472,6 +1496,7 @@ th {
   background-color: gray;
   color: white;
 }
+
 .popup {
   position: absolute;
   top: 65px;
@@ -1484,13 +1509,16 @@ th {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
+
 .popup ul {
   list-style: none;
 }
+
 ul.popup {
   margin-left: 0;
   padding-left: 0;
 }
+
 ul.popup {
   margin-left: 0;
   padding-left: 0;
@@ -1501,6 +1529,7 @@ ul.popup li {
   padding: 8px 12px;
   cursor: pointer;
 }
+
 .name-project {
   display: inline-block;
   white-space: nowrap;
@@ -1544,6 +1573,7 @@ ul.popup li {
   font-weight: bold;
   margin-right: 5px;
 }
+
 .box {
   display: flex;
   align-items: center;
@@ -1578,6 +1608,7 @@ ul.popup li {
   display: flex;
   align-items: left;
   justify-content: space-between;
+
 }
 
 .image-container {
@@ -1620,6 +1651,7 @@ ul.popup li {
   border-radius: 50%;
   cursor: pointer;
 }
+
 .profile-box .medallas {
   display: flex;
   justify-content: center;
@@ -1634,6 +1666,7 @@ ul.popup li {
   background-color: #ccc;
   margin: 0 10px;
 }
+
 .img-profile {
   text-align: center;
   border-radius: 50%;
@@ -1642,13 +1675,17 @@ ul.popup li {
   height: 200px;
   z-index: 1;
 }
+
 .name-profile {
   font-size: 40px;
 }
-.marce , .vico{
+
+.marce,
+.vico {
   margin-top: 3px;
 }
-.lautros{
+
+.lautros {
   margin-bottom: 13px;
 }
 
@@ -1690,62 +1727,64 @@ ul.popup li {
   margin-left: 150px;
   margin-right: 150px;
 }
+
 .circle-1 {
 
-position: relative;
-height: 150px;
-width: 150px;
-border: 5px solid black;
-border-radius: 5000px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-right: 20px;
-margin-left: 20px;
-background-color: #1c4459;
-z-index: 1;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border: 5px solid black;
+  border-radius: 5000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #1c4459;
+  z-index: 1;
 }
-  
+
 .circle-2 {
-position: relative;
-height: 100px;
-width: 100px;
-border: 5px solid #01c38e;
-border-radius: 5000px;
-z-index: 1;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border: 5px solid #01c38e;
+  border-radius: 5000px;
+  z-index: 1;
 }
 
 .container-circles {
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-z-index: 1;
-}
-.rectangulito{
-position: relative;
-margin-left: 50px;
-width: 200px;
-height: 100px;
-background-color: red;
-z-index: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
 }
 
-.tosco{
-position: relative;
-height: 100px;
-margin-top: 24px;
-width: 100px;
-z-index: 0;
+.rectangulito {
+  position: relative;
+  margin-left: 50px;
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  z-index: 0;
 }
-  
-.rectangulo{
-position: absolute;
-width: 500px;
-height: 10px;
-background-color: #01c38e;
-z-index: 0;
+
+.tosco {
+  position: relative;
+  height: 100px;
+  margin-top: 24px;
+  width: 100px;
+  z-index: 0;
+}
+
+.rectangulo {
+  position: absolute;
+  width: 500px;
+  height: 10px;
+  background-color: #01c38e;
+  z-index: 0;
 }
 
 .card-about {
