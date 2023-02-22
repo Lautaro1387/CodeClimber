@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import {Confetti} from './confetti.js';
-import '../styles/App.css';
+import '../App.css';
 
 export const Quiz = () => {
   const [questions, setQuestions] = useState([]);
@@ -27,6 +27,8 @@ export const Quiz = () => {
     }
     e.target.classList.add(isCorrect ? "correct" : "incorrect");
     setRemainingQuestions(remainingQuestions - 1);
+    const answerButton = e.target.parentNode.querySelectorAll('.option-button');
+    answerButton.forEach(button => button.disabled = true);
     setTimeout(() => {
       if (questionFirst === questions.length - 1) {
         setIsFinish(true);

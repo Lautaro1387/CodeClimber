@@ -1,5 +1,5 @@
 import React from 'react';
-import {data} from '../js/dataRank.js';
+import {data} from './dataRank.js';
 
 export const Rank = () => {
   return (

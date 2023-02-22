@@ -5,11 +5,11 @@ import { Register } from './components/register.js';
 import { Menu } from './components/menu.js';
 import { Quiz } from './components/quizGame.js';
 import { Rank } from './components/ranking.js';
-import { data } from './js/dataRank.js';
+import { data } from './components/dataRank.js';
 import { Profile } from './components/profile.js';
 import Aboutus from "./components/about.js";
 import Circles from "./components/rutaQuiz.js";
-import './styles/App.css'
+import './App.css'
 
 
 const App = () => {
