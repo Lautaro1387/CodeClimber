@@ -10,6 +10,7 @@ import { Profile } from './components/profile.js';
 import Aboutus from "./components/about.js";
 import Circles from "./components/rutaQuiz.js";
 import './App.css'
+import Landing from "./components/landing.js";
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/quiz" element={<Circles />} />
+        <Route path="/" element={<Landing />} />
         <Route path="/ranking" element={<Rank data={data} />} />
       </Routes>
     </div>

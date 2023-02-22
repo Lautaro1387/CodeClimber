@@ -6,7 +6,7 @@ export const Navigation = () => {
   const location = useLocation();
 
   // Si la ubicación actual es Log o Quiz, no se mostrará la barra de navegación.
-  if (location.pathname === '/quiz/html/1' || location.pathname === '/quiz/html/2' || location.pathname === '/quiz/html/3' || location.pathname === '/quiz/css/1' || location.pathname === '/quiz/css/2' || location.pathname === '/quiz/css/3' || location.pathname === '/login' || location.pathname === '/signup' || location.pathname === '/quiz/javascript/1' || location.pathname === '/quiz/javascript/2' || location.pathname === '/quiz/javascript/3' || location.pathname === '/quiz/python/1' || location.pathname === '/quiz/python/2' || location.pathname === '/quiz/python/3') {
+  if (location.pathname === '/quiz/html/1' || location.pathname === '/quiz/html/2' || location.pathname === '/quiz/html/3' || location.pathname === '/quiz/css/1' || location.pathname === '/quiz/css/2' || location.pathname === '/quiz/css/3' || location.pathname === '/login' || location.pathname === '/signup' || location.pathname === '/quiz/javascript/1' || location.pathname === '/quiz/javascript/2' || location.pathname === '/quiz/javascript/3' || location.pathname === '/quiz/python/1' || location.pathname === '/quiz/python/2' || location.pathname === '/quiz/python/3' || location.pathname === '/') {
     return null;
   }
   const handleProfileClick = () => {
