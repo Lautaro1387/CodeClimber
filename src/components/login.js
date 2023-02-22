@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import swal from 'sweetalert';
 
 export const Login = () => {
     const [user, setUser] = useState('');
@@ -9,7 +10,7 @@ export const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(user);
+        console.log("user:" + user);
         if (!user)
             return;
 
@@ -28,19 +29,39 @@ export const Login = () => {
             })
         .then(data => {
             console.log(data);
-            let userExists = false;
-            for (let i = 0; i < data.length; i++) {
-                if (data[i].username === user) {
-                    userExists = true;
-                    console.log(userExists);
-                    if (data[i].password === pass) {
-                        console.log("User exists and password matches");
-                        navigate('/home');
-                    } else {
-                        alert("Password and user doesn't match");
-                        console.log("Password doesn't match");
-                    }
-            }
+            const userExists = data.find((i) => i.username === user);
+            if (!user || !pass) {
+                swal({
+                    title: "Please fill in all fields",
+                    text: "Try again",
+                    icon: "error",
+                    button: "Ok",
+                    timer: "3500",
+                  });
+                return;
+            } else if (!userExists) {
+                swal({
+                    title: "User doesn't exists",
+                    text: "Try again",
+                    icon: "error",
+                    button: "Ok",
+                    timer: "3500",
+                  });
+                return;
+            } else {
+                if (userExists.password !== pass) {
+                    swal({
+                        title: "User and password doesn't match",
+                        text: "Try again",
+                        icon: "error",
+                        button: "Ok",
+                        timer: "3500",
+                      });
+                    return;
+                } else {
+                    console.log("login accepted")
+                    navigate("/home")
+                }
             }
         })
         .catch(error => {
