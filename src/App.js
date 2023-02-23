@@ -7,10 +7,10 @@ import { Quiz } from './components/quizGame.js';
 import { Rank } from './components/ranking.js';
 import { data } from './components/dataRank.js';
 import { Profile } from './components/profile.js';
+import {Quizroute} from "./components/rutaQuiz.js";
+import {Landing} from "./components/landing.js";
 import Aboutus from "./components/about.js";
-import Circles from "./components/rutaQuiz.js";
 import './App.css'
-import Landing from "./components/landing.js";
 
 
 const App = () => {
@@ -20,11 +20,11 @@ const App = () => {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Register />} />
-        <Route path="/home" element={<Menu name="Python" />} />
+        <Route path="/quiz" element={<Menu name="Python" />} />
         <Route path="/quiz/:category/:pagination" element={<Quiz />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/quiz" element={<Circles />} />
+        <Route path="/home" element={<Quizroute />} />
         <Route path="/" element={<Landing />} />
         <Route path="/ranking" element={<Rank data={data} />} />
       </Routes>

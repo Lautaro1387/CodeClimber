@@ -3,9 +3,6 @@ import Aboutus from './about.js';
 export const Menu = () => {
     return (
         <div>
-            <h1 className='title-main'>Code Climber</h1>
-            <p className='info-main'>Code Climber is a game that consists of answering programming questions, such as HTML, CSS, Javascript and Python
-                , to test your skills and compete against other users.</p>
             <div className='container-main'>
                 <a href='/quiz/html' className='link-project'>
                     <div className='container-menu'>

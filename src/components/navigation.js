@@ -44,7 +44,7 @@ export const Navigation = () => {
                   <a href="/aboutus">About us</a>
                 </li>
                 <li>
-                  <a href="/login">Log out</a>
+                  <a href="/">Log out</a>
                 </li>
               </ul>
             </div>

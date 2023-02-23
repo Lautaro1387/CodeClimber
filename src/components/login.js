@@ -13,7 +13,6 @@ export const Login = () => {
         console.log("user:" + user);
         if (!user)
             return;
-
         fetch('http://127.0.0.1:8000/api/users', {
             method: 'GET',
             headers: {

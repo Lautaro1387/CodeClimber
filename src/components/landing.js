@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Landing = () => {
+export const Landing = () => {
   return (
     <div className='all-landing'>
               <div class="big-wrapper light">
@@ -10,13 +10,12 @@ const Landing = () => {
           <div class="container-landing">
             <div class="logo-landing">
               <img src="../images/default.png" alt="Logo" />
-              <h3 className='h3-landing'>Danvo in a new branch</h3>
             </div>
 
             <div class="links-landing">
               <ul className='ul-landing'>
-              <li><a className='a-landing' href="#" class="signin-landing">Sign In</a></li>
-              <li><btn> <a className='a-landing' href="#" class="btn-landing">Sign Up</a></btn></li>
+              <li><a className='a-landing' href="/login" class="signin-landing">Sign In</a></li>
+              <li><btn> <a className='a-landing' href="/signup" class="btn-landing">Sign Up</a></btn></li>
               </ul>
             </div>
 
@@ -32,13 +31,11 @@ const Landing = () => {
           <div class="container-landing">
             <div class="left-landing">
               <div class="big-title-landing">
-                <h1 className='h1-landing'>Future is here,</h1>
-                <h1 className='h1-landing'>Start Exploring now.</h1>
+                <h1 className='h1-landing'>Code Climber</h1>
               </div>
               <p class="text-landing">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Delectus eius distinctio odit, magni magnam qui ex perferendis
-                vitae!
+              Code Climber is a game that consists of answering programming questions, such as HTML, CSS, Javascript and Python
+                , to test your skills and compete against other users
               </p>
               <div class="cta-landing">
                 <a href="#" class="btn-landing">Get started</a>
@@ -67,4 +64,3 @@ const Landing = () => {
   )
 }
 
-export default Landing
