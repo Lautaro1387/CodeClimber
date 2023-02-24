@@ -1752,7 +1752,7 @@ img {
   position: relative;
   width: 100%;
   min-width: 100vw;
-  min-height: 110vh;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1794,9 +1794,10 @@ header {
 }
 
 .logo-landing img {
-  width: 40px;
+  width: 80px;
   margin-right: 0.6rem;
-  margin-top: -0.6rem;
+  margin-top: -0.1rem;
+  margin-left: 25px;
 }
 
 .logo-landing .h3-landing {
@@ -1900,13 +1901,12 @@ header {
 
 .big-title-landing {
   font-size: 1.4rem;
-  color: var(--darkOne);
   text-transform: capitalize;
   line-height: 1.4;
 }
 
 .text-landing {
-  margin-right: 20px;
+  margin-left: 50px;
   font-size: 1.1rem;
   max-width: 600px;
   line-height: 2.3;
@@ -2048,9 +2048,7 @@ header {
   }
 
   .text-landing {
-    margin-right: 20px;
     font-size: 0.95rem;
-    text-align: left;
   }
 
   .person {
@@ -2186,11 +2184,13 @@ header {
 
 }
 .cta-landing{
+  margin-left: 50px;
   text-align: left;
 }
 
 
 .footer-landing{
+  margin-top: 140px;
   position: relative;
   width: 100%;
   background-color: #01c38e;

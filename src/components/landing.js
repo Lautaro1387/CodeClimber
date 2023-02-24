@@ -4,7 +4,6 @@ export const Landing = () => {
   return (
     <div className='all-landing'>
               <div class="big-wrapper">
-        <img src="./img/shape.png" alt="" class="shape" />
 
         <header className='header-landing'>
           <div class="container-landing">
@@ -59,18 +58,18 @@ export const Landing = () => {
           <div className='wave' id='wave4'></div>
           </div>
             <ul className='lists-landing'>
-            <li className='li-footer' ><a className='a-footer'  href="/quiz"><i class="fa-sharp fa-solid fa-book"></i></a></li>
-            <li className='li-footer' ><a className='a-footer'  href="/quiz"><i class="fa-sharp fa-solid fa-book"></i></a></li>
-            <li className='li-footer' ><a className='a-footer'  href="/quiz"><i class="fa-sharp fa-solid fa-book"></i></a></li>
-            <li className='li-footer' ><a className='a-footer'  href="/quiz"><i class="fa-sharp fa-solid fa-book"></i></a></li>
+            <li className='li-footer' ><a className='a-footer'  href="/quiz"><i class="fa-brands fa-twitter"></i></a></li>
+            <li className='li-footer' ><a className='a-footer'  href="/quiz"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li className='li-footer' ><a className='a-footer'  href="/quiz"><i class="fa-solid fa-envelope"></i></a></li>
+            <li className='li-footer' ><a className='a-footer'  href="/quiz"><i class="fa-brands fa-github"></i></a></li>
             </ul>
             <ul className='footermenu-landing'>
             <li className='menu-footer' ><a className='amenu-footer'  href="/quiz">Home</a></li>
-            <li className='menu-footer' ><a className='amenu-footer'  href="/quiz">Home</a></li>
-            <li className='menu-footer' ><a className='amenu-footer'  href="/quiz">Home</a></li>
-            <li className='menu-footer' ><a className='amenu-footer'  href="/quiz">Home</a></li>
+            <li className='menu-footer' ><a className='amenu-footer'  href="/quiz">About Us</a></li>
+            <li className='menu-footer' ><a className='amenu-footer'  href="/quiz">Play</a></li>
+            <li className='menu-footer' ><a className='amenu-footer'  href="/quiz">Contact</a></li>
             </ul>
-            <p className='rights-landing' > © CodeClimber hates Homosexuals kKkKKKkKKkkk | All rights reserved 2023</p>
+            <p className='rights-landing' > ©2023 CodeClimber | All rights reserved </p>
         </div>
       </div>
       
