@@ -3,13 +3,13 @@ import React from 'react'
 export const Landing = () => {
   return (
     <div className='all-landing'>
-              <div class="big-wrapper light">
+              <div class="big-wrapper">
         <img src="./img/shape.png" alt="" class="shape" />
 
         <header className='header-landing'>
           <div class="container-landing">
             <div class="logo-landing">
-              <img src="../images/default.png" alt="Logo" />
+              <img src={require('../images/Logo.png')} />
             </div>
 
             <div class="links-landing">
@@ -38,28 +38,45 @@ export const Landing = () => {
                 , to test your skills and compete against other users
               </p>
               <div class="cta-landing">
-                <a href="#" class="btn-landing">Get started</a>
+                <a href="#" class="getstarted-landing">Get started</a>
               </div>
             </div>
 
             <div class="right-landing">
-              <img src="./img/person.png" alt="Person Image" class="person-landing" />
+              <img src={require('../images/person.png')} />
             </div>
           </div>
         </div>
-
         <div class="bottom-area-landing">
           <div class="container-landing">
-            <button class="toggle-btn-landing">
-              <i className='i-landing' class="far fa-moon"></i>
-              <i className='i-landing' class="far fa-sun"></i>
-            </button>
           </div>
         </div>
+        <div className='footer-landing'>
+          <div className='waves'>
+          <div className='wave' id='wave1'></div>
+          <div className='wave' id='wave2'></div>
+          <div className='wave' id='wave3'></div>
+          <div className='wave' id='wave4'></div>
+          </div>
+            <ul className='lists-landing'>
+            <li className='li-footer' ><a className='a-footer'  href="/quiz"><i class="fa-sharp fa-solid fa-book"></i></a></li>
+            <li className='li-footer' ><a className='a-footer'  href="/quiz"><i class="fa-sharp fa-solid fa-book"></i></a></li>
+            <li className='li-footer' ><a className='a-footer'  href="/quiz"><i class="fa-sharp fa-solid fa-book"></i></a></li>
+            <li className='li-footer' ><a className='a-footer'  href="/quiz"><i class="fa-sharp fa-solid fa-book"></i></a></li>
+            </ul>
+            <ul className='footermenu-landing'>
+            <li className='menu-footer' ><a className='amenu-footer'  href="/quiz">Home</a></li>
+            <li className='menu-footer' ><a className='amenu-footer'  href="/quiz">Home</a></li>
+            <li className='menu-footer' ><a className='amenu-footer'  href="/quiz">Home</a></li>
+            <li className='menu-footer' ><a className='amenu-footer'  href="/quiz">Home</a></li>
+            </ul>
+            <p className='rights-landing' > © CodeClimber hates Homosexuals kKkKKKkKKkkk | All rights reserved 2023</p>
+        </div>
       </div>
-
+      
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <script src="./app.js"></script>
+
     </div>
   )
 }
