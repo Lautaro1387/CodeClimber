@@ -69,7 +69,7 @@ export const Login = () => {
     }
     return (
         <div className="auth-form-container">
-
+            <img src={require('../images/Logo.png')} className="login-logo"/>
             <h2> Code Climber</h2>
             <form className="login-form" onSubmit={handleSubmit}>
                 <label htmlFor="user">User</label>

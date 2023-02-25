@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.05dd9b0c.css",
-    "main.js": "/static/js/main.f770e9d8.js",
+    "main.css": "/static/css/main.010ba9dd.css",
+    "main.js": "/static/js/main.40b64bdc.js",
     "static/media/santoreco.jpg": "/static/media/santoreco.f4416e25685272958236.jpg",
     "static/media/Marcelo.jpg": "/static/media/Marcelo.0a8a3652a6e3a52be266.jpg",
     "static/media/Vico.jpg": "/static/media/Vico.722bd26ba7abde0321e5.jpg",
     "static/media/Felipe.jpg": "/static/media/Felipe.a20b9e3cde3d52c78269.jpg",
     "static/media/Lautaro.jpg": "/static/media/Lautaro.b18f37462a79ae7313ff.jpg",
-    "static/media/Logo1.png": "/static/media/Logo1.31be4b0bdd61c78e7ede.png",
-    "static/media/Logo2.png": "/static/media/Logo2.31daff5b91ebfc7ceec5.png",
+    "static/media/person.png": "/static/media/person.d8db667fcf53a9f27716.png",
     "static/media/default.png": "/static/media/default.291f2d768d90048aa84d.png",
     "static/media/Logo.png": "/static/media/Logo.7f1fbf7272b3a76c9711.png",
     "index.html": "/index.html",
-    "main.05dd9b0c.css.map": "/static/css/main.05dd9b0c.css.map",
-    "main.f770e9d8.js.map": "/static/js/main.f770e9d8.js.map"
+    "main.010ba9dd.css.map": "/static/css/main.010ba9dd.css.map",
+    "main.40b64bdc.js.map": "/static/js/main.40b64bdc.js.map"
   },
   "entrypoints": [
-    "static/css/main.05dd9b0c.css",
-    "static/js/main.f770e9d8.js"
+    "static/css/main.010ba9dd.css",
+    "static/js/main.40b64bdc.js"
   ]
 }

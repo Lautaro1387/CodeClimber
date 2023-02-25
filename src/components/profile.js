@@ -26,9 +26,9 @@ export const Profile = () => {
           <p className='name-profile'>0 score</p>
           <div className="medallas">
           <img src={require('../images/Logo.png')} alt="Medalla 3" className="medalla" />
-          <img src={require('../images/Logo1.png')} alt="Medalla 1" className="medalla" />
-          <img src={require('../images/Logo2.png')} alt="Medalla 2" className="medalla" />
-          <img src={require('../images/Logo1.png')} alt="Medalla 4" className="medalla" />
+          <img src={require('../images/Logo.png')} alt="Medalla 1" className="medalla" />
+          <img src={require('../images/Logo.png')} alt="Medalla 2" className="medalla" />
+          <img src={require('../images/Logo.png')} alt="Medalla 4" className="medalla" />
           </div>          
       </div>
   </div>

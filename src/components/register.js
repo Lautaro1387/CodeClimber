@@ -126,6 +126,7 @@ export const Register = () => {
 
     return (
         <div className="auth-form-container">
+                        <img src={require('../images/Logo.png')} className="login-logo"/>
             <h2>Sign up</h2>
             <form className="register-form" onSubmit={handleSubmit}>
                 <label htmlFor="name">Username</label>
