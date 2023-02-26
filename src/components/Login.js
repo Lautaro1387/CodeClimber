@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import swal from 'sweetalert';
+import { AuthContext } from "../contexts/AuthContext";
 
 export const Login = () => {
     const [user, setUser] = useState('');
     const [pass, setPass] = useState('');
 
     const navigate = useNavigate();
+    const { setUsername, setPoints } = useContext(AuthContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -59,6 +61,8 @@ export const Login = () => {
                     return;
                 } else {
                     console.log("login accepted")
+                    setUsername(userExists.username);
+                    setPoints(0);
                     navigate("/home")
                 }
             }

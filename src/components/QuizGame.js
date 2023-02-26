@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
-import { Confetti } from './confetti.js';
+import { Confetti } from './Confetti.js';
 import '../App.css';
 
-export const Quiz = () => {
+export const QuizGame = () => {
   const [questions, setQuestions] = useState([]);
   const [questionFirst, setQuestionFirst] = useState(0);
   const [score, setScore] = useState(0);
@@ -20,6 +20,32 @@ export const Quiz = () => {
     };
     fetchData();
   }, [category, pagination]);
+  useEffect(() => {
+    const selectedQuiz = localStorage.getItem('selectedQuiz');
+    if (isFinish && selectedQuiz) {
+      localStorage.setItem(selectedQuiz, 'true');
+    }
+  }, [isFinish]);
+  
+  const selectedQuiz = localStorage.getItem('selectedQuiz');
+
+  function isLevel1Complete() {
+    return localStorage.getItem('quiz/html/1') === 'true';
+  }
+
+  function getNextQuiz(selectedQuiz) {
+    if (selectedQuiz === 'quiz/html/2' && !isLevel1Complete()) {
+      return 'HTML level 1';
+    } else if (selectedQuiz === 'quiz/html/3' && !isLevel1Complete()) {
+      return 'HTML level 1';
+    } else {
+      return null;
+    }
+  }
+
+  function isQuizComplete(quiz) {
+    return localStorage.getItem(quiz) === 'true';
+  }
 
   function submitOptions(isCorrect, e) {
     if (isCorrect) {
@@ -32,11 +58,23 @@ export const Quiz = () => {
     setTimeout(() => {
       if (questionFirst === questions.length - 1) {
         setIsFinish(true);
+        localStorage.removeItem('selectedQuiz');
       } else {
         setQuestionFirst(questionFirst + 1);
       }
     }, 1500);
   }
+
+  useEffect(() => {
+    if (selectedQuiz && selectedQuiz !== `/${category}/${pagination}`) {
+      const requiredQuiz = getNextQuiz(selectedQuiz);
+      if (requiredQuiz && !isQuizComplete(selectedQuiz)) {
+        alert(`Complete ${requiredQuiz} first!`);
+        window.location.href = selectedQuiz;
+      }
+    }
+    localStorage.setItem('selectedQuiz', `/${category}/${pagination}`);
+  }, [category, pagination, selectedQuiz]);
 
   if (isFinish)
     return (
@@ -47,12 +85,18 @@ export const Quiz = () => {
             <p>
               Obtuviste {score} puntos de {questions.length} preguntas!
             </p>
-            <button onClick={() => (window.location.href = "/quiz")}>
-              Volver a jugar
+            <button onClick={() => {
+                localStorage.removeItem('selectedQuiz');
+                window.location.href = "/quiz/:category/:pagination";
+            }}>
+              Play again
             </button>
             <p></p>
-            <button onClick={() => (window.location.href = "/home")}>
-              Volver al inicio
+            <button onClick={() => {
+              localStorage.removeItem('selectedQuiz');
+              window.location.href = "/home";
+            }}>
+              Home
             </button>
           </div>
         </div>
