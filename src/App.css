@@ -356,7 +356,7 @@ button {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 150px;
-  background-color: #1f3757;
+  background-color: #1a1e29;
 
 }
 
@@ -365,7 +365,7 @@ button {
   height: 416px;
   padding: 60px 30px;
   margin: 20px;
-  background: #f2f3f7;
+  background: grey;
   border-radius: 20px;
 }
 
@@ -437,7 +437,7 @@ button {
   height: 416px;
   padding: 60px 30px;
   margin: 20px;
-  background: #f2f3f7;
+  background: grey;
   border-radius: 20px;
   box-shadow: 1 3px 13px 500000px green;
 }
@@ -511,7 +511,7 @@ button {
   height: 416px;
   padding: 60px 30px;
   margin: 20px;
-  background: #f2f3f7;
+  background: grey;
   border-radius: 20px;
   display: grid;
   grid-template-columns: repeat(5fr 1fr);
@@ -1141,7 +1141,7 @@ button {
   height: 416px;
   padding: 60px 30px;
   margin: 20px;
-  background: #f2f3f7;
+  background: grey;
   border-radius: 20px;
 }
 
@@ -1213,7 +1213,7 @@ button {
   height: 416px;
   padding: 60px 30px;
   margin: 20px;
-  background: #f2f3f7;
+  background: grey;
   border-radius: 20px;
   box-shadow: 1 3px 13px 500000px green;
 }
@@ -1277,6 +1277,8 @@ button {
 
 .container-about {
   display: flex;
+  margin-bottom: 0px;
+  margin-top: 0px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -1731,6 +1733,7 @@ ul.popup li {
   height: 100px;
 }
 .all-landing {
+  overflow-x:hidden;
   font-family: "Poppins", sans-serif;
   color: white;
 }
@@ -2169,19 +2172,21 @@ header {
 }
 .getstarted-landing {
   display: inline-block;
-  text-align: left;
   padding: 0.9rem 1.9rem;
   color: white !important;
-  background-color: var(--mainColor);
   border-radius: 16px;
   text-transform: capitalize;
   transition: 0.3s;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 0px;
   border: 4px solid #01c38e;
   background-color:#01c38e;
-  text-align: left;
+}
 
+.getstarted-landing:hover {
+  border: 4px solid #01c38e;
+  background-color: #1a1e29;
+  transform: scale(1) !important;
 }
 .cta-landing{
   margin-left: 50px;
@@ -2462,8 +2467,4 @@ ul.lists-landing{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.profile-photo {
-  height: 10px;
-  z-index: 1000;
 }
