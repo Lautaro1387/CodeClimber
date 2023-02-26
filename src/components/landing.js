@@ -37,7 +37,7 @@ export const Landing = () => {
                 , to test your skills and compete against other users
               </p>
               <div class="cta-landing">
-                <a href="#" class="getstarted-landing">Get started</a>
+                <a href="/signup" class="getstarted-landing">Get started</a>
               </div>
             </div>
 
@@ -49,6 +49,29 @@ export const Landing = () => {
         <div class="bottom-area-landing">
           <div class="container-landing">
           </div>
+        </div>
+        <div className='container-pro'>
+        <div className='card-pro'>
+          <div className='icon-pro'><i class="fa-brands fa-python"></i></div>
+          <div className='content-pro'>
+              <h2>Python</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a felis sit amet felis aliquam tincidunt et at tellus. Sed ut lobortis metus,</p>
+            </div>
+        </div>
+        <div className='card-pro'>
+          <div className='icon-pro'><i class="fa-brands fa-js"></i></div>
+            <div className='content-pro'>
+              <h2>JavaScript</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a felis sit amet felis aliquam tincidunt et at tellus. Sed ut lobortis metus, id posuere justo. aliquet orci felis, id ultrices odio vulputate eu. Cras congue nibh vel ipsum vehiis euismod.ere neque.</p>
+            </div>
+        </div>
+        <div className='card-pro'>
+          <div className='icon-pro'><i class="fa-brands fa-css3-alt"></i></div>
+          <div className='content-pro'>
+              <h2>Css</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a felis sit amet felis aliquam tincidunt et at tellus. Sed ut lobortis metus, id posuere justo. aliquet orci felis, id ultrices odio vulputate eu. Cras congue nibh vel ipsum vehiis euismod.ere neque.</p>
+            </div>
+        </div>
         </div>
         <div className='footer-landing'>
           <div className='waves'>
@@ -75,6 +98,8 @@ export const Landing = () => {
       
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <script src="./app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     </div>
   )
