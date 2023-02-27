@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import swal from 'sweetalert';
+import { AuthContext } from "../contexts/AuthContext";
 
 export const Register = () => {
     const [username, setName] = useState('');
@@ -10,6 +11,10 @@ export const Register = () => {
 
     const navigate = useNavigate();
 
+    const userContext = useContext(AuthContext);
+    const { users, setUsers } = userContext;
+
+    let newUser
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!email || !password || !username || !password2) {
@@ -102,17 +107,20 @@ export const Register = () => {
                         });
                     return;
                 } else {
+                    const newUser = { username, email, password, points: 0 };
                     return fetch('http://127.0.0.1:8000/api/users', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
                         },
-                        body: JSON.stringify({ username, email, password })
+                        body: JSON.stringify(newUser),
                     });
                 }
             })
-            .then(response => {
+            .then((response) => {
                 if (response.ok) {
+                    console.log(response)
+                    setUsers([...users, newUser]); // Agregamos el nuevo usuario a la lista de usuarios
                     navigate('/home');
                 } else {
                     throw new Error('Network response was not ok');
@@ -126,7 +134,7 @@ export const Register = () => {
 
     return (
         <div className="auth-form-container">
-                        <img src={require('../images/Logo.png')} className="login-logo"/>
+            <img src={require('../images/Logo.png')} alt="logo" className="login-logo"/>
             <h2>Sign up</h2>
             <form className="register-form" onSubmit={handleSubmit}>
                 <label htmlFor="name">Username</label>
