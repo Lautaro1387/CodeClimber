@@ -2522,6 +2522,9 @@ ul.lists-landing{
 .card-pro:nth-child(3){
   background: linear-gradient(to bottom, #24ff72, #9a4eff);
 }
+.card-pro:nth-child(4){
+  background: linear-gradient(to bottom, #65d8ff , #287bff);
+}
 .icon-pro{
   position: relative;
   width: 140px;
@@ -2580,6 +2583,4 @@ ul.lists-landing{
 .h1-pro{
   font-size: 35px;
   color: white;
-}
-.h1con-pro{
 }

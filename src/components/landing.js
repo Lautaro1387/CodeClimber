@@ -66,11 +66,19 @@ export const Landing = () => {
               <p>JavaScript is an interpreted object-oriented programming language implemented <br></br> as part of a web browser enabling user interface enhancements and dynamic web pages.</p>
             </div>
         </div>
+
         <div className='card-pro'>
           <div className='icon-pro'><i class="fa-brands fa-css3-alt"></i></div>
           <div className='content-pro'>
               <h2>CSS</h2>
               <p>CSS is a graphic design language for <br></br> defining and creating the presentation of a structured document, used to establish the visual layout of web documents, and user interfaces written in HTML.</p>
+            </div>
+        </div>
+        <div className='card-pro'>
+          <div className='icon-pro'><i class="fa-brands fa-html5"></i></div>
+            <div className='content-pro'>
+              <h2>HTML</h2>
+              <p>HTML it is the most basic component of <br></br> the Web. Defines the meaning and structure of web content. It is a markup language that allows us to indicate the structure of our document through tags.</p>
             </div>
         </div>
         </div>
