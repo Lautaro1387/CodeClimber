@@ -50,26 +50,27 @@ export const Landing = () => {
           <div class="container-landing">
           </div>
         </div>
+        <div className='h1con-pro'><h1 className='h1-pro'>Here you can learn</h1></div>
         <div className='container-pro'>
         <div className='card-pro'>
           <div className='icon-pro'><i class="fa-brands fa-python"></i></div>
           <div className='content-pro'>
               <h2>Python</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a felis sit amet felis aliquam tincidunt et at tellus. Sed ut lobortis metus,</p>
+              <p>Python is a high level interpreted programming language whose philosophy emphasizes the readability of its code, it is used to develop applications of all kinds, examples: Instagram, Netflix, Spotify.</p>
             </div>
         </div>
         <div className='card-pro'>
           <div className='icon-pro'><i class="fa-brands fa-js"></i></div>
             <div className='content-pro'>
               <h2>JavaScript</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a felis sit amet felis aliquam tincidunt et at tellus. Sed ut lobortis metus, id posuere justo. aliquet orci felis, id ultrices odio vulputate eu. Cras congue nibh vel ipsum vehiis euismod.ere neque.</p>
+              <p>JavaScript is an interpreted object-oriented programming language implemented <br></br> as part of a web browser enabling user interface enhancements and dynamic web pages.</p>
             </div>
         </div>
         <div className='card-pro'>
           <div className='icon-pro'><i class="fa-brands fa-css3-alt"></i></div>
           <div className='content-pro'>
-              <h2>Css</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a felis sit amet felis aliquam tincidunt et at tellus. Sed ut lobortis metus, id posuere justo. aliquet orci felis, id ultrices odio vulputate eu. Cras congue nibh vel ipsum vehiis euismod.ere neque.</p>
+              <h2>CSS</h2>
+              <p>CSS is a graphic design language for <br></br> defining and creating the presentation of a structured document, used to establish the visual layout of web documents, and user interfaces written in HTML.</p>
             </div>
         </div>
         </div>

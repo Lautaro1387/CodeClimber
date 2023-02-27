@@ -2575,4 +2575,11 @@ ul.lists-landing{
 }
 .content-pro p{
   line-height: 1.5em;
+  font-size: 14px;
+}
+.h1-pro{
+  font-size: 35px;
+  color: white;
+}
+.h1con-pro{
 }
