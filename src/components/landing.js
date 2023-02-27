@@ -34,7 +34,7 @@ export const Landing = () => {
               </div>
               <p class="text-landing">
               Code Climber is a game that consists of answering programming questions, such as HTML, CSS, Javascript and Python
-                , to test your skills and compete against other users
+                , to test your skills and compete against other users.
               </p>
               <div class="cta-landing">
                 <a href="/signup" class="getstarted-landing">Get started</a>
