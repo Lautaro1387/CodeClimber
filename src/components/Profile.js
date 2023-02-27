@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import { AuthContext } from '../contexts/AuthContext';
+import { AuthContext } from '../contexts/AuthContext.js';
 
 export const Profile = () => {
 
@@ -27,7 +27,7 @@ export const Profile = () => {
       <img src={require('../images/default.png')} alt="Foto de perfil" className='img-profile' onClick={handleFotoClick} />
           <br></br>
           <p className='name-profile'>{username}</p>
-          <p className='score-profile'>{points}</p>
+          <p className='score-profile'>{points} score</p>
           <div className="medallas">
           <img src={require('../images/medalls.png')} alt="Medalla 3" className="medalla" />
           <img src={require('../images/medalls.png')} alt="Medalla 1" className="medalla" />

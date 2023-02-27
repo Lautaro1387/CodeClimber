@@ -7,7 +7,7 @@ export const Rank = () => {
   <table className='table-ranking'>
     <thead>
       <tr>
-        <th>Global</th>
+        <th>Ranking table</th>
       </tr>
     </thead>
     <tbody>

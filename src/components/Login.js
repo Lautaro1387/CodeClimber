@@ -62,7 +62,7 @@ export const Login = () => {
                 } else {
                     console.log("login accepted")
                     setUsername(userExists.username);
-                    setPoints(0);
+                    setPoints(userExists.points);
                     navigate("/home")
                 }
             }

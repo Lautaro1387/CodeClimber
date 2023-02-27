@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import swal from 'sweetalert';
-import { AuthContext } from "../contexts/AuthContext";
+import { AuthContext } from "../contexts/AuthContext.js";
 
 export const Register = () => {
     const [username, setName] = useState('');
@@ -11,8 +11,7 @@ export const Register = () => {
 
     const navigate = useNavigate();
 
-    const userContext = useContext(AuthContext);
-    const { users, setUsers } = userContext;
+    const { users, setUsers, points, setPoints, setUsername: setAuthUsername } = useContext(AuthContext);
 
     let newUser
     const handleSubmit = (e) => {
@@ -107,7 +106,7 @@ export const Register = () => {
                         });
                     return;
                 } else {
-                    const newUser = { username, email, password, points: 0 };
+                    newUser = { username, email, password, points: 0 };
                     return fetch('http://127.0.0.1:8000/api/users', {
                         method: 'POST',
                         headers: {
@@ -121,6 +120,8 @@ export const Register = () => {
                 if (response.ok) {
                     console.log(response)
                     setUsers([...users, newUser]); // Agregamos el nuevo usuario a la lista de usuarios
+                    setAuthUsername(username); // Actualizamos el nombre de usuario en el contexto
+                    setPoints(newUser.points); // Actualizamos los puntos del nuevo usuario en el contexto
                     navigate('/home');
                 } else {
                     throw new Error('Network response was not ok');
