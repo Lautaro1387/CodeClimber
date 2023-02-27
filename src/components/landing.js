@@ -50,7 +50,7 @@ export const Landing = () => {
           <div class="container-landing">
           </div>
         </div>
-        <div className='h1con-pro'><h1 className='h1-pro'>Here you can learn</h1></div>
+        <div className='h1con-pro'><h1 className='h1-pro'>Here you can test your knowledge about</h1></div>
         <div className='container-pro'>
         <div className='card-pro'>
           <div className='icon-pro'><i class="fa-brands fa-python"></i></div>
