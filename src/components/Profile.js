@@ -26,7 +26,7 @@ export const Profile = () => {
         <div className="profile-box">
       <img src={require('../images/default.png')} alt="Foto de perfil" className='img-profile' onClick={handleFotoClick} />
           <br></br>
-          <p className='name-profile'>{username}</p>
+          <p className='name-profile'>DemoDay</p>
           <p className='score-profile'>{points} score</p>
           <div className="medallas">
           <img src={require('../images/medalls.png')} alt="Medalla 3" className="medalla" />

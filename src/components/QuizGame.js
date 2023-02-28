@@ -93,7 +93,7 @@ export const QuizGame = () => {
             </button>
             <p></p>
             <button onClick={() => {
-              localStorage.removeItem('selectedQuiz');
+              localStorage.getItem('selectedQuiz');
               window.location.href = "/home";
             }}>
               Home
